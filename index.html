@@ -14,7 +14,8 @@
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg px-4">
       <div class="container-fluid">
         <a class="navbar-brand" href="./index.html">
           <img
@@ -37,22 +38,22 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
+            <li class="nav-item fs-4">
               <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item fs-4">
               <a class="nav-link" href="./pages/destinations.html">Destinations</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item fs-4">
               <a class="nav-link" href="./pages/contact.html">Contact Us</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-    
+    <!-- Hero Section -->
     <section class="hero-section container-fluid">
-      <div class="container col-xxl-8 px-4 py-5">
+      <div class="container col-8 px-4 py-5">
         <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
           <div class="col-10 col-sm-8 col-lg-6">
             <img
@@ -66,28 +67,29 @@
           </div>
           <div class="col-lg-6">
             <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">
-              Choose your experience 
+              Found a new EXPERIENCE
             </h1>
             <p class="lead">
-              from wild adventures to mindful escapes. We’ll find the perfect destination for you.
+              With Travel Explorer you can explore travel packages 
+              based in what kind of experience you want to have.
+              <br />
+              From wild adventures to mindful escapes. We’ll find the perfect destination for you.
             </p>
             <div class="d-grid gap-2 d-md-flex justify-content-md-start">
               <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">
-                Discover!
+                <a href="#how-it-works" class="text-white text-decoration-none">Learn More</a>
               </button>
             </div>
           </div>
         </div>
-    </section>
+      </section>
 
-    <section class="container marketing">
-        <!-- Three columns of text below the carousel -->
-          <h2 class="hero-title text-center mb-4">
-        How It Works
-      </h2>
+      <!-- How It Works Section -->
+    <section id="how-it-works" class="container min-vh-100">
+        <h2 class="how-it-works-title text-center fs-1">How It Works</h2>
         <div class="row">
           <div class="col-lg-4">
-            <!-- <svg
+            <svg
               aria-label="Placeholder"
               class="bd-placeholder-img rounded-circle"
               height="140"
@@ -95,7 +97,7 @@
               role="img"
               width="140"
               xmlns="http://www.w3.org/2000/svg"
-            > -->
+            >
               <title>Choose your experience</title>
               <rect
                 width="100%"
@@ -106,7 +108,7 @@
             <h2 class="fw-normal">Choose your experience</h2>
             <p>
               Start by choosing what you want to feel — adventure, balance, connection, or discovery.
-Each category represents a different way to explore the world, from wild escapes to mindful retreats.
+              Each category represents a different way to explore the world, from wild escapes to mindful retreats.
             </p>
             <!-- <p>
               <a class="btn btn-secondary" href="#">View details &raquo;</a>
@@ -114,7 +116,7 @@ Each category represents a different way to explore the world, from wild escapes
           </div>
           <!-- /.col-lg-4 -->
           <div class="col-lg-4">
-            <!-- <svg
+            <svg
               aria-label="Placeholder"
               class="bd-placeholder-img rounded-circle"
               height="140"
@@ -122,7 +124,7 @@ Each category represents a different way to explore the world, from wild escapes
               role="img"
               width="140"
               xmlns="http://www.w3.org/2000/svg"
-            > -->
+            >
               <title>We craft your journey</title>
               <rect
                 width="100%"
@@ -140,7 +142,7 @@ Each category represents a different way to explore the world, from wild escapes
           </div>
           <!-- /.col-lg-4 -->
           <div class="col-lg-4">
-            <!-- <svg
+            <svg
               aria-label="Placeholder"
               class="bd-placeholder-img rounded-circle"
               height="140"
@@ -148,7 +150,7 @@ Each category represents a different way to explore the world, from wild escapes
               role="img"
               width="140"
               xmlns="http://www.w3.org/2000/svg"
-            > -->
+            >
               <title>Live it fully</title>
               <rect
                 width="100%"
@@ -166,29 +168,40 @@ Each category represents a different way to explore the world, from wild escapes
             </p> -->
           </div>
           <!-- /.col-lg-4 -->
+        </div>
+      <div>
+        <h3>Explore the options</h3>
+        <p class="lead">
+          Whether you crave thrilling adventures, cultural immersions, or tranquil retreats, we have a travel package tailored to your desires.
+        </p>
+        <button type="button" class="btn btn-primary btn-lg px-4">
+          <a href="#options" class="text-white text-decoration-none">View Destinations</a>
+        </button>
+      </div>
         </section>
 
-        <div class="container">
+        <!-- Options Section  -->
+      <section id="options" class="container">
 
-        <hr class="featurette-divider" />
-        <h2 class="hero-title text-center mb-4">
+        <h2 class="options-title text-center fs-1 mb-4">
         That are the options
-      </h2>
-        <div class="row featurette">
+        </h2>
+        
+        <div class="row options">
           <div class="col-md-7">
-            <h2 class="featurette-heading fw-normal lh-1">
-              First featurette heading.
-              <span class="text-body-secondary">It’ll blow your mind.</span>
+            <h2 class="options-heading fw-normal lh-1">
+              EcoVoyage -
+              <span class="text-body-secondary">Sustainable Adventures</span>
             </h2>
             <p class="lead">
-              Some great placeholder content for the first featurette here.
+              Some great placeholder content for the first options here.
               Imagine some exciting prose here.
             </p>
           </div>
           <div class="col-md-5">
-            <svg
+            <!-- <svg
               aria-label="Placeholder: 500x500"
-              class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+              class="bd-placeholder-img bd-placeholder-img-lg options-image img-fluid mx-auto"
               height="500"
               preserveAspectRatio="xMidYMid slice"
               role="img"
@@ -204,28 +217,29 @@ Each category represents a different way to explore the world, from wild escapes
               <text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">
                 500x500
               </text>
-            </svg>
-          </div>
+            </svg> -->
+              <img src="./img/eco.jpeg" alt="EcoVoyage Image" class="img-fluid rounded options-image">
+          
         </div>
 
        
-        <hr class="featurette-divider" />
-        <div class="row featurette">
+        <hr class="options-divider" />
+        <div class="row options">
           <div class="col-md-7 order-md-2">
-            <h2 class="featurette-heading fw-normal lh-1">
-              Oh yeah, it’s that good.
-              <span class="text-body-secondary">See for yourself.</span>
+            <h2 class="options-heading fw-normal lh-1">
+              CultureQuest -
+              <span class="text-body-secondary">Food, Art & History</span>
             </h2>
             <p class="lead">
-              Another featurette? Of course. More placeholder content here to
+              Another options? Of course. More placeholder content here to
               give you an idea of how this layout would work with some actual
               real-world content in place.
             </p>
           </div>
           <div class="col-md-5 order-md-1">
-            <svg
+            <!-- <svg
               aria-label="Placeholder: 500x500"
-              class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+              class="bd-placeholder-img bd-placeholder-img-lg options-image img-fluid mx-auto"
               height="500"
               preserveAspectRatio="xMidYMid slice"
               role="img"
@@ -241,15 +255,91 @@ Each category represents a different way to explore the world, from wild escapes
               <text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">
                 500x500
               </text>
-            </svg>
+            </svg> -->
+              <img src="./img/culture.jpeg" alt="CultureQuest Image" class="img-fluid rounded options-image">
           </div>
         </div>
-        <hr class="featurette-divider" />
-        <div class="row featurette">
+
+        <hr class="options-divider" />
+        <div class="row options">
           <div class="col-md-7">
-            <h2 class="featurette-heading fw-normal lh-1">
-              And lastly, this one.
-              <span class="text-body-secondary">Checkmate.</span>
+            <h2 class="options-heading fw-normal lh-1">
+              WildTrails -
+              <span class="text-body-secondary">Extreme Adventures</span>
+            </h2>
+            <p class="lead">
+              And yes, this is the last block of representative placeholder
+              content. Again, not really intended to be actually read, simply
+              here to give you a better view of what this would look like with
+              some actual content. Your content.
+            </p>
+          </div>
+          <div class="col-md-5 options-image-container">
+            <!-- <svg
+              aria-label="Placeholder: 500x500"
+              class="bd-placeholder-img bd-placeholder-img-lg options-image img-fluid mx-auto"
+              height="500"
+              preserveAspectRatio="xMidYMid slice"
+              role="img"
+              width="500"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title>Placeholder</title>
+              <rect
+                width="100%"
+                height="100%"
+                fill="var(--bs-secondary-bg)"
+              ></rect>
+              <text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">
+                500x500
+              </text>
+            </svg> -->
+          <img src="./img/extreme.jpeg" alt="WildTrails Image" class="img-fluid rounded options-image">
+        </div>
+        <hr class="options-divider" />
+        <div class="row options">
+          <div class="col-md-7 order-md-2">
+            <h2 class="options-heading fw-normal lh-1">
+              MystiQuest -
+              <span class="text-body-secondary">Spiritual & Hidden Journeys</span>
+            </h2>
+            <p class="lead">
+              Another options? Of course. More placeholder content here to
+              give you an idea of how this layout would work with some actual
+              real-world content in place.
+            </p>
+          </div>
+          <div class="col-md-5 order-md-1">
+            <!-- <svg
+              aria-label="Placeholder: 500x500"
+              class="bd-placeholder-img bd-placeholder-img-lg options-image img-fluid mx-auto"
+              height="500"
+              preserveAspectRatio="xMidYMid slice"
+              role="img"
+              width="500"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title>Placeholder</title>
+              <rect
+                width="100%"
+                height="100%"
+                fill="var(--bs-secondary-bg)"
+              ></rect>
+              <text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">
+                500x500
+              </text>
+            </svg> -->
+              <img src="./img/spiritual.jpeg" alt="MystiQuest Image" class="img-fluid rounded options-image">
+          </div>
+        </div>
+
+        <hr class="options-divider" />
+
+        <div class="row options">
+          <div class="col-md-7">
+            <h2 class="options-heading fw-normal lh-1">
+              MindfulGetaway -
+              <span class="text-body-secondary">Wellness & Balance</span>
             </h2>
             <p class="lead">
               And yes, this is the last block of representative placeholder
@@ -259,9 +349,9 @@ Each category represents a different way to explore the world, from wild escapes
             </p>
           </div>
           <div class="col-md-5">
-            <svg
+            <!-- <svg
               aria-label="Placeholder: 500x500"
-              class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+              class="bd-placeholder-img bd-placeholder-img-lg options-image img-fluid mx-auto"
               height="500"
               preserveAspectRatio="xMidYMid slice"
               role="img"
@@ -277,13 +367,25 @@ Each category represents a different way to explore the world, from wild escapes
               <text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">
                 500x500
               </text>
-            </svg>
-          </div>
-        </div>
-        <hr class="featurette-divider" />
-        </div> <!-- End of container added -->
+            </svg> -->
 
-        <div class="container">
+              <img src="./img/mindful.jpeg" alt="WildTrails Image" class="img-fluid rounded options-image">
+
+        </div>
+        <hr class="options-divider" />
+      </section> 
+
+      <section class="container mb-5 text-center">
+        <h2 class="fs-1 mb-4">Ready to Explore?</h2>
+        <p class="lead mb-4">
+          Start your journey with Travel Explorer today and discover the world in a way that resonates with you.
+        </p>
+        <button type="button" class="btn btn-primary btn-lg px-4">
+          <a href="./pages/destinations.html" class="text-white text-decoration-none">Explore Destinations</a>
+        </button>
+      </section>
+
+    <div class="container">
       <footer
         class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
       >
@@ -319,30 +421,15 @@ Each category represents a different way to explore the world, from wild escapes
       </footer>
     </div>
 
-    <!-- <section class="hero-section text-white text-center d-flex align-items-center justify-content-center"
-         style="background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e');
-                background-size: cover;
-                background-position: center;
-                height: 100vh;
-                position: relative;">
-  <div class="overlay position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"></div>
-
-  <div class="container position-relative">
-    <h1 class="display-3 fw-bold mb-4">Travel Explorer</h1>
-    <p class="lead fs-4 mb-5">Choose your experience — from wild adventures to mindful escapes.  
-      We’ll find the perfect destination for you.</p>
-    <div class="d-flex justify-content-center gap-3">
-      <a href="#destinations" class="btn btn-primary btn-lg px-4">Explore Destinations</a>
-      <a href="#contact" class="btn btn-outline-light btn-lg px-4">Contact Us</a>
-    </div>
-  </div>
-</section> -->
-
+    <!-- Bootstrap  JavaScript -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
+
+    <!-- Custom JavaScript -->
+    <script src="./js/script.js"></script>
     
   </body>
 </html>

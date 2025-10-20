@@ -4,33 +4,119 @@
   color: rgb(var(--bs-tertiary-color-rgb));
 } */
 
+body {
+  scroll-behavior: smooth;
+}
+
 .logo-custom {
   width: 4rem;
 }
 
+.hero-section {
+  height: 100vh;
+}
+
+.hero-title {
+  /* margin-bottom: 30rem; */
+}
+
 /* Center align the text within the three columns below the carousel */
-.marketing .col-lg-4 {
+#how-it-works {
+  /* height: 60vh; */
   margin-bottom: 1.5rem;
   text-align: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
-/* rtl:begin:ignore */
-.marketing .col-lg-4 p {
+
+#how-it-works p {
   margin-right: 0.75rem;
   margin-left: 0.75rem;
 }
-/* rtl:end:ignore */
 
-/* Featurettes
-------------------------- */
+.how-it-works-title {
+  margin-bottom: 5rem;
+  margin-top: 5rem;
+}
 
-.featurette-divider {
+/* Options Section */
+
+.options-divider {
   margin: 5rem 0; /* Space out the Bootstrap <hr> more */
 }
 
 /* Thin out the marketing headings */
 /* rtl:begin:remove */
-.featurette-heading {
+.options-heading {
   letter-spacing: -0.05rem;
+}
+
+.options-image {
+  object-fit: cover;
+  width: 500px;
+  height: 500px;
+}
+
+/* CARD STYLES
+-------------------------------------------------- */
+
+.card-image {
+  /* object-fit: cover; */
+  height: 40vh;
+}
+
+.scroll-down i {
+  animation: bounce 1.5s infinite;
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(6px);
+  }
+  60% {
+    transform: translateY(3px);
+  }
+}
+
+/* DESTINATIONS.HTML */
+
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-eco:hover {
+  background-color: #00d87b;
+}
+
+.card-culture:hover {
+  background-color: #f4f162;
+}
+
+.card-extreme:hover {
+  background-color: #f94960;
+}
+
+.card-mindful:hover {
+  background-color: #c22df0;
+}
+
+.card-spiritual:hover {
+  background-color: #40c7e9;
 }
 
 /* RESPONSIVE CSS
@@ -44,13 +130,13 @@
     line-height: 1.4;
   }
 
-  .featurette-heading {
+  .options-heading {
     font-size: 50px;
   }
 }
 
 @media (min-width: 62em) {
-  .featurette-heading {
+  .options-heading {
     margin-top: 7rem;
   }
 }
