@@ -129,6 +129,15 @@ body {
   display: none;
 }
 
+/* MODAL STYLES
+-------------------------------------------------- */
+
+.details-modal:hover {
+  transform: none;
+  box-shadow: none;
+  cursor: default;
+}
+
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 
