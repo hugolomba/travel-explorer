@@ -1,8 +1,8 @@
-const ecoDestinations = [
+const ecoPackages = [
   {
     id: "costa-rica",
     title: "Costa Rica",
-    subtitle: "Rainforest Retreat 🌴",
+    subtitle: "Rainforest Retreat",
     description:
       "Eco trails and wildlife observation. Guided tours, night safaris, and conservation workshops.",
     itinerary: [
@@ -18,12 +18,12 @@ const ecoDestinations = [
     price: "€1,800",
     difficulty: "Moderate",
     bestTime: "December – April",
-    image: "../img/eco-destinations/costa-rica.jpg",
+    image: "../img/eco-packages/costa-rica.jpg",
   },
   {
     id: "iceland",
     title: "Iceland",
-    subtitle: "Energy & Nature ❄️",
+    subtitle: "Energy & Nature",
     description:
       "Thermal baths and visits to geothermal energy farms. Explore volcanic landscapes and relax in hot springs.",
     itinerary: [
@@ -37,12 +37,12 @@ const ecoDestinations = [
     price: "€2,200",
     difficulty: "Easy – Moderate",
     bestTime: "June – September",
-    image: "../img/eco-destinations/iceland.jpg",
+    image: "../img/eco-packages/iceland.jpg",
   },
   {
     id: "bali",
     title: "Bali",
-    subtitle: "Green Harmony 🌾",
+    subtitle: "Green Harmony",
     description:
       "Yoga, creative recycling, and organic food. Participate in eco-projects and wellness activities.",
     itinerary: [
@@ -58,15 +58,15 @@ const ecoDestinations = [
     price: "€1,500",
     difficulty: "Easy",
     bestTime: "April – October",
-    image: "../img/eco-destinations/bali.avif",
+    image: "../img/eco-packages/bali.avif",
   },
 ];
 
-const cultureDestinations = [
+const culturePackages = [
   {
     id: "italy",
     title: "Italy",
-    subtitle: "The Taste of Tuscany 🍷",
+    subtitle: "The Taste of Tuscany",
     description:
       "Italian cooking classes with local chefs. Wine tasting tours and hands-on pasta making sessions.",
     itinerary: [
@@ -80,12 +80,12 @@ const cultureDestinations = [
     price: "€1,900",
     difficulty: "Easy",
     bestTime: "May – September",
-    image: "../img/culture-destinations/italy.jpg",
+    image: "../img/culture-packages/italy.jpeg",
   },
   {
     id: "japan",
     title: "Japan",
-    subtitle: "Kyoto Heritage Tour 🏯",
+    subtitle: "Kyoto Heritage Tour",
     description:
       "Tea ceremony and historical temples. Explore ancient streets, wear kimono, and attend craft workshops.",
     itinerary: [
@@ -99,12 +99,12 @@ const cultureDestinations = [
     price: "€2,500",
     difficulty: "Easy",
     bestTime: "March – May, October – November",
-    image: "../img/culture-destinations/japan.jpg",
+    image: "../img/culture-packages/japan.avif",
   },
   {
     id: "morocco",
     title: "Morocco",
-    subtitle: "Colours of Marrakech 🎭",
+    subtitle: "Colours of Marrakech",
     description:
       "Spice markets and traditional pottery workshops. Explore medinas and taste Moroccan cuisine.",
     itinerary: [
@@ -118,15 +118,15 @@ const cultureDestinations = [
     price: "€1,600",
     difficulty: "Easy – Moderate",
     bestTime: "March – May, September – November",
-    image: "../img/culture-destinations/morocco.jpg",
+    image: "../img/culture-packages/morocco.jpeg",
   },
 ];
 
-const extremeDestinations = [
+const extremePackages = [
   {
     id: "argentina",
     title: "Argentina",
-    subtitle: "Patagonia Trekking 🥾",
+    subtitle: "Patagonia Trekking",
     description:
       "Icy trails and mountain camping. Trek glaciers and experience guided adventure routes.",
     itinerary: [
@@ -142,12 +142,12 @@ const extremeDestinations = [
     price: "€3,000",
     difficulty: "Hard",
     bestTime: "November – March",
-    image: "../img/extreme-destinations/argentina.jpg",
+    image: "../img/extreme-packages/argentina.avif",
   },
   {
-    id: "uae",
-    title: "UAE",
-    subtitle: "Desert Skydiving 🪂",
+    id: "United Arab Emirates",
+    title: "United Arab Emirates",
+    subtitle: "Desert Skydiving",
     description:
       "Skydiving over the Dubai dunes. Enjoy desert safaris and adrenaline sports.",
     itinerary: [
@@ -161,12 +161,12 @@ const extremeDestinations = [
     price: "€1,800",
     difficulty: "Moderate",
     bestTime: "October – April",
-    image: "../img/extreme-destinations/uae.jpg",
+    image: "../img/extreme-packages/uae.jpg",
   },
   {
     id: "nepal",
     title: "Nepal",
-    subtitle: "Himalayan Challenge 🏔️",
+    subtitle: "Himalayan Challenge",
     description:
       "Trek to Everest Base Camp. High-altitude trekking with breathtaking views of the Himalayas.",
     itinerary: [
@@ -182,15 +182,15 @@ const extremeDestinations = [
     price: "€3,500",
     difficulty: "Very Hard",
     bestTime: "March – May, September – November",
-    image: "../img/extreme-destinations/nepal.jpg",
+    image: "../img/extreme-packages/nepal.jpg",
   },
 ];
 
-const spiritualDestinations = [
+const spiritualPackages = [
   {
     id: "peru",
     title: "Peru",
-    subtitle: "Inca Energy Path 🔮",
+    subtitle: "Inca Energy Path",
     description:
       "Spiritual trails and ancient temples in Cusco. Meditation and sacred ceremonies included.",
     itinerary: [
@@ -206,12 +206,12 @@ const spiritualDestinations = [
     price: "€2,200",
     difficulty: "Moderate",
     bestTime: "May – September",
-    image: "../img/spiritual-destinations/peru.jpg",
+    image: "../img/spiritual-packages/peru.jpg",
   },
   {
     id: "india",
     title: "India",
-    subtitle: "The Ashram Experience 🧘",
+    subtitle: "The Ashram Experience",
     description:
       "Meditation and spirituality in India. Yoga retreats and cultural immersion included.",
     itinerary: [
@@ -227,12 +227,12 @@ const spiritualDestinations = [
     price: "€2,000",
     difficulty: "Easy",
     bestTime: "October – March",
-    image: "../img/spiritual-destinations/india.jpg",
+    image: "../img/spiritual-packages/india.jpg",
   },
   {
     id: "egypt",
     title: "Egypt",
-    subtitle: "The Temples of Light 🌅",
+    subtitle: "The Temples of Light",
     description:
       "Visits to Luxor’s temples and desert meditation. Experience sunrise rituals and ancient wisdom.",
     itinerary: [
@@ -248,15 +248,15 @@ const spiritualDestinations = [
     price: "€1,900",
     difficulty: "Easy – Moderate",
     bestTime: "October – April",
-    image: "../img/spiritual-destinations/egypt.jpg",
+    image: "../img/spiritual-packages/egypt.jpg",
   },
 ];
 
-const mindfulDestinations = [
+const mindfulPackages = [
   {
     id: "switzerland",
     title: "Switzerland",
-    subtitle: "Alpine Retreat 🏞️",
+    subtitle: "Alpine Retreat",
     description:
       "Chalet in the Alps with spa and sound therapy. Hiking and wellness workshops included.",
     itinerary: [
@@ -272,12 +272,12 @@ const mindfulDestinations = [
     price: "€2,500",
     difficulty: "Easy – Moderate",
     bestTime: "June – September",
-    image: "../img/mindful-destinations/switzerland.jpg",
+    image: "../img/mindful-packages/switzerland.jpg",
   },
   {
     id: "thailand",
     title: "Thailand",
-    subtitle: "Mindful Coast 🌊",
+    subtitle: "Mindful Coast",
     description:
       "Thai massage and yoga retreats. Beach meditation and mindfulness practices included.",
     itinerary: [
@@ -293,12 +293,12 @@ const mindfulDestinations = [
     price: "€1,700",
     difficulty: "Easy",
     bestTime: "November – February",
-    image: "../img/mindful-destinations/thailand.jpg",
+    image: "../img/mindful-packages/thailand.jpg",
   },
   {
     id: "portugal",
     title: "Portugal",
-    subtitle: "Slow Life in Alentejo 🍃",
+    subtitle: "Slow Life in Alentejo",
     description:
       "Peaceful days among vineyards and rural villages. Wine tours and craft workshops included.",
     itinerary: [
@@ -314,16 +314,16 @@ const mindfulDestinations = [
     price: "€1,400",
     difficulty: "Easy",
     bestTime: "April – October",
-    image: "../img/mindful-destinations/portugal.jpg",
+    image: "../img/mindful-packages/portugal.avif",
   },
 ];
 
-const destinations = [
+const packages = [
   // 🌿 EcoVoyage
   {
     id: "costa-rica",
     title: "Costa Rica",
-    subtitle: "Rainforest Retreat 🌴",
+    subtitle: "Rainforest Retreat",
     description:
       "Eco trails and wildlife observation. Guided tours, night safaris, and conservation workshops.",
     itinerary: [
@@ -339,12 +339,12 @@ const destinations = [
     price: "€1,800",
     difficulty: "Moderate",
     bestTime: "December – April",
-    image: "../img/eco-destinations/costa-rica.jpg",
+    image: "../img/eco-packages/costa-rica.jpg",
   },
   {
     id: "iceland",
     title: "Iceland",
-    subtitle: "Energy & Nature ❄️",
+    subtitle: "Energy & Nature",
     description:
       "Thermal baths and visits to geothermal energy farms. Explore volcanic landscapes and relax in hot springs.",
     itinerary: [
@@ -358,12 +358,12 @@ const destinations = [
     price: "€2,200",
     difficulty: "Easy – Moderate",
     bestTime: "June – September",
-    image: "../img/eco-destinations/iceland.jpg",
+    image: "../img/eco-packages/iceland.jpg",
   },
   {
     id: "bali",
     title: "Bali",
-    subtitle: "Green Harmony 🌾",
+    subtitle: "Green Harmony",
     description:
       "Yoga, creative recycling, and organic food. Participate in eco-projects and wellness activities.",
     itinerary: [
@@ -379,14 +379,14 @@ const destinations = [
     price: "€1,500",
     difficulty: "Easy",
     bestTime: "April – October",
-    image: "../img/eco-destinations/bali.avif",
+    image: "../img/eco-packages/bali.avif",
   },
 
   // 🎨 CultureQuest
   {
     id: "italy",
     title: "Italy",
-    subtitle: "The Taste of Tuscany 🍷",
+    subtitle: "The Taste of Tuscany",
     description:
       "Italian cooking classes with local chefs. Wine tasting tours and hands-on pasta making sessions.",
     itinerary: [
@@ -400,12 +400,12 @@ const destinations = [
     price: "€1,900",
     difficulty: "Easy",
     bestTime: "May – September",
-    image: "../img/culture-destinations/italy.jpg",
+    image: "../img/culture-packages/italy.jpg",
   },
   {
     id: "japan",
     title: "Japan",
-    subtitle: "Kyoto Heritage Tour 🏯",
+    subtitle: "Kyoto Heritage Tour",
     description:
       "Tea ceremony and historical temples. Explore ancient streets, wear kimono, and attend craft workshops.",
     itinerary: [
@@ -419,12 +419,12 @@ const destinations = [
     price: "€2,500",
     difficulty: "Easy",
     bestTime: "March – May, October – November",
-    image: "../img/culture-destinations/japan.jpg",
+    image: "../img/culture-packages/japan.jpg",
   },
   {
     id: "morocco",
     title: "Morocco",
-    subtitle: "Colours of Marrakech 🎭",
+    subtitle: "Colours of Marrakech",
     description:
       "Spice markets and traditional pottery workshops. Explore medinas and taste Moroccan cuisine.",
     itinerary: [
@@ -438,14 +438,14 @@ const destinations = [
     price: "€1,600",
     difficulty: "Easy – Moderate",
     bestTime: "March – May, September – November",
-    image: "../img/culture-destinations/morocco.jpg",
+    image: "../img/culture-packages/morocco.jpg",
   },
 
   // 🏔️ WildTrails
   {
     id: "argentina",
     title: "Argentina",
-    subtitle: "Patagonia Trekking 🥾",
+    subtitle: "Patagonia Trekking",
     description:
       "Icy trails and mountain camping. Trek glaciers and experience guided adventure routes.",
     itinerary: [
@@ -461,12 +461,12 @@ const destinations = [
     price: "€3,000",
     difficulty: "Hard",
     bestTime: "November – March",
-    image: "../img/extreme-destinations/argentina.jpg",
+    image: "../img/extreme-packages/argentina.jpg",
   },
   {
-    id: "uae",
-    title: "UAE",
-    subtitle: "Desert Skydiving 🪂",
+    id: "United Arab Emirates",
+    title: "United Arab Emirates",
+    subtitle: "Desert Skydiving",
     description:
       "Skydiving over the Dubai dunes. Enjoy desert safaris and adrenaline sports.",
     itinerary: [
@@ -480,12 +480,12 @@ const destinations = [
     price: "€1,800",
     difficulty: "Moderate",
     bestTime: "October – April",
-    image: "../img/extreme-destinations/uae.jpg",
+    image: "../img/extreme-packages/uae.jpg",
   },
   {
     id: "nepal",
     title: "Nepal",
-    subtitle: "Himalayan Challenge 🏔️",
+    subtitle: "Himalayan Challenge",
     description:
       "Trek to Everest Base Camp. High-altitude trekking with breathtaking views of the Himalayas.",
     itinerary: [
@@ -501,14 +501,14 @@ const destinations = [
     price: "€3,500",
     difficulty: "Very Hard",
     bestTime: "March – May, September – November",
-    image: "../img/extreme-destinations/nepal.jpg",
+    image: "../img/extreme-packages/nepal.jpg",
   },
 
   // 🌌 MystiQuest
   {
     id: "peru",
     title: "Peru",
-    subtitle: "Inca Energy Path 🔮",
+    subtitle: "Inca Energy Path",
     description:
       "Spiritual trails and ancient temples in Cusco. Meditation and sacred ceremonies included.",
     itinerary: [
@@ -524,12 +524,12 @@ const destinations = [
     price: "€2,200",
     difficulty: "Moderate",
     bestTime: "May – September",
-    image: "../img/spiritual-destinations/peru.jpg",
+    image: "../img/spiritual-packages/peru.jpg",
   },
   {
     id: "india",
     title: "India",
-    subtitle: "The Ashram Experience 🧘",
+    subtitle: "The Ashram Experience",
     description:
       "Meditation and spirituality in India. Yoga retreats and cultural immersion included.",
     itinerary: [
@@ -545,12 +545,12 @@ const destinations = [
     price: "€2,000",
     difficulty: "Easy",
     bestTime: "October – March",
-    image: "../img/spiritual-destinations/india.jpg",
+    image: "../img/spiritual-packages/india.jpg",
   },
   {
     id: "egypt",
     title: "Egypt",
-    subtitle: "The Temples of Light 🌅",
+    subtitle: "The Temples of Light",
     description:
       "Visits to Luxor’s temples and desert meditation. Experience sunrise rituals and ancient wisdom.",
     itinerary: [
@@ -566,14 +566,14 @@ const destinations = [
     price: "€1,900",
     difficulty: "Easy – Moderate",
     bestTime: "October – April",
-    image: "../img/spiritual-destinations/egypt.jpg",
+    image: "../img/spiritual-packages/egypt.jpg",
   },
 
   // 🧘 MindfulGetaway
   {
     id: "switzerland",
     title: "Switzerland",
-    subtitle: "Alpine Retreat 🏞️",
+    subtitle: "Alpine Retreat",
     description:
       "Chalet in the Alps with spa and sound therapy. Hiking and wellness workshops included.",
     itinerary: [
@@ -589,12 +589,12 @@ const destinations = [
     price: "€2,500",
     difficulty: "Easy – Moderate",
     bestTime: "June – September",
-    image: "../img/mindful-destinations/switzerland.jpg",
+    image: "../img/mindful-packages/switzerland.jpg",
   },
   {
     id: "thailand",
     title: "Thailand",
-    subtitle: "Mindful Coast 🌊",
+    subtitle: "Mindful Coast",
     description:
       "Thai massage and yoga retreats. Beach meditation and mindfulness practices included.",
     itinerary: [
@@ -610,12 +610,12 @@ const destinations = [
     price: "€1,700",
     difficulty: "Easy",
     bestTime: "November – February",
-    image: "../img/mindful-destinations/thailand.jpg",
+    image: "../img/mindful-packages/thailand.jpg",
   },
   {
     id: "portugal",
     title: "Portugal",
-    subtitle: "Slow Life in Alentejo 🍃",
+    subtitle: "Slow Life in Alentejo",
     description:
       "Peaceful days among vineyards and rural villages. Wine tours and craft workshops included.",
     itinerary: [
@@ -631,6 +631,14 @@ const destinations = [
     price: "€1,400",
     difficulty: "Easy",
     bestTime: "April – October",
-    image: "../img/mindful-destinations/portugal.jpg",
+    image: "../img/mindful-packages/portugal.jpg",
   },
+];
+
+const allPackages = [
+  ...ecoPackages,
+  ...culturePackages,
+  ...extremePackages,
+  ...spiritualPackages,
+  ...mindfulPackages,
 ];
