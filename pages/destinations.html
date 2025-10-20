@@ -54,14 +54,19 @@
       </div>
     </nav>
 
-    <h1 class="text-center">Destinations</h1>
-    <p class="text-center">Explore our top travel destinations.</p>
+    <section class="text-center my-5">
+      <h1 class="fs-1 mb-4">Find Your Perfect Experience</h1>
+      <p class="fs-4" id="results-text">
+        Select an experience type to see matching destinations.
+      </p>
+    </section>
 
     <!-- cards -->
 
-    <div class="row row-cols-1 row-cols-lg-5 g-4 px-5">
+    <section class="g-4 px-5 min-vh-100" id="cards-section">
+      <div class="row row-cols-1 row-cols-lg-5 ">
       <div class="col">
-        <div class="card h-100 card-eco" data-experience="eco">
+        <div class="card h-100 card-eco options-card" data-experience="eco">
           <img
             src="../img/eco.jpeg"
             class="card-img-top card-image"
@@ -79,7 +84,10 @@
       </div>
 
       <div class="col">
-        <div class="card h-100 card-culture" data-experience="culture">
+        <div
+          class="card h-100 card-culture options-card"
+          data-experience="culture"
+        >
           <img
             src="../img/culture.jpeg"
             class="card-img-top card-image"
@@ -97,7 +105,10 @@
       </div>
 
       <div class="col">
-        <div class="card h-100 card-extreme" data-experience="extreme">
+        <div
+          class="card h-100 card-extreme options-card"
+          data-experience="extreme"
+        >
           <img
             src="../img/extreme.jpeg"
             class="card-img-top card-image"
@@ -114,7 +125,10 @@
         </div>
       </div>
       <div class="col">
-        <div class="card h-100 card-mindful" data-experience="mindful">
+        <div
+          class="card h-100 card-mindful options-card"
+          data-experience="mindful"
+        >
           <img
             src="../img/mindful.jpeg"
             class="card-img-top card-image"
@@ -130,7 +144,10 @@
         </div>
       </div>
       <div class="col">
-        <div class="card h-100 card-spiritual" data-experience="spiritual">
+        <div
+          class="card h-100 card-spiritual options-card"
+          data-experience="spiritual"
+        >
           <img
             src="../img/spiritual.jpeg"
             class="card-img-top card-image"
@@ -146,6 +163,171 @@
           </div>
         </div>
       </div>
+      </div>
+    </section>
+
+    <!-- Results Section -->
+
+    <section id="results-section" class="my-5 text-center min-vh-100 hidden">
+      <h2 id="results-title" class="fs-2 mb-4"></h2>
+
+      <div id="eco-results" class="row row-cols-1 row-cols-lg-3 g-4 m-4">
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="../img/eco-destinations/costa-rica.jpg"
+              class="card-img-top result-card-image"
+              alt="A person hiking in the Costa Rica rainforest"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Costa Rica</h5>
+              <h6 class="card-subtitle mb-2 text-body-secondary">
+                Rain Forest Retreat
+              </h6>
+
+              <p class="card-text">
+                Eco trails and wildlife observation.
+              </p>
+            </div>
+              <ul class="list-group list-group-flush">
+              <li class="list-group-item d-flex justify-content-around">
+                <div>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar" viewBox="0 0 16 16">
+                  <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4z"/>
+                  </svg>
+                Three days
+                </div>
+                <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+                </svg>
+                One person
+                </div>
+              
+              <li class="list-group-item">from <strong>€ 500</strong></li>
+    
+            </ul>
+          
+            
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="../img/eco-destinations/iceland.jpg"
+              class="card-img-top result-card-image"
+              alt="A thermal lake in Iceland"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Iceland</h5>
+              <h6 class="card-subtitle mb-2 text-body-secondary">
+                Energy & Nature
+              </h6>
+
+              <p class="card-text">
+                Thermal baths and visits to geothermal energy farms.
+
+              </p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item d-flex justify-content-around">
+                <div>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar" viewBox="0 0 16 16">
+  <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4z"/>
+</svg>
+                Three days
+                </div>
+                <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+  <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+  <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+</svg>
+                One person
+                </div>
+              
+              <li class="list-group-item">from <strong>€ 500</strong></li>
+    
+            </ul>
+          
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="../img/eco-destinations/bali.avif"
+              class="card-img-top result-card-image"
+              alt="People doing Yoga in Bali"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Bali</h5>
+              <h6 class="card-subtitle mb-2 text-body-secondary">
+                Green Harmony 
+              </h6>
+
+              <p class="card-text">
+                Yoga, creative recycling, and organic food.
+
+              </p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item d-flex justify-content-around">
+                <div>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar" viewBox="0 0 16 16">
+  <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4z"/>
+</svg>
+                Three days
+                </div>
+                <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+  <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+  <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+</svg>
+                One person
+                </div>
+              
+              <li class="list-group-item">from <strong>€ 500</strong></li>
+    
+            </ul>
+            
+          </div>
+        </div>
+        
+        </div>
+      </div>
+
+      <button
+        type="button"
+        class="btn btn-primary btn-lg px-4 mt-4"
+        id="load-more-btn"
+      >
+        See all the destinations
+      </button>
+    </section>
+
+    <div class="container">
+      <footer
+        class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
+      >
+        <p class="col-md-4 mb-0 text-body-secondary">
+          &copy; 2025 Travel Explorer
+        </p>
+        <a
+          href="/"
+          class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
+          aria-label="Bootstrap"
+        >
+        </a>
+        <p class="col-md-4 mb-0 text-body-secondary text-end">
+          Developed by
+          <a
+            href="https://www.hugo-miranda.dev"
+            class="text-decoration-none"
+            target="_blank"
+            >Hugo Lomba</a
+          >
+        </p>
+      </footer>
     </div>
 
     <!-- Bootstrap  JavaScript -->
