@@ -10,6 +10,10 @@
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
     <link href="./css/styles.css" rel="stylesheet" />
   </head>
 
@@ -85,107 +89,74 @@
       </section>
 
       <!-- How It Works Section -->
-    <section id="how-it-works" class="container min-vh-100">
-        <h2 class="how-it-works-title text-center fs-1">How It Works</h2>
-        <div class="row">
-          <div class="col-lg-4">
-            <!-- <svg
-              aria-label="Placeholder"
-              class="bd-placeholder-img rounded-circle"
-              height="140"
-              preserveAspectRatio="xMidYMid slice"
-              role="img"
-              width="140"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <title>Choose your experience</title>
-              <rect
-                width="100%"
-                height="100%"
-                fill="var(--bs-secondary-color)"
-              ></rect>
-            </svg> -->
-            <h2 class="fw-normal">Choose your experience</h2>
-            <p>
-              Start by choosing what you want to feel — adventure, balance, connection, or discovery.
-              Each category represents a different way to explore the world, from wild escapes to mindful retreats.
-            </p>
-            <!-- <p>
-              <a class="btn btn-secondary" href="#">View details &raquo;</a>
-            </p> -->
+
+<section id="how-it-works" class="how-it-works py-5 text-center position-relative text-dark ">
+
+  <div class="container-fluid position-relative z-1 d-flex flex-column justify-content-evenly align-items-center">
+    <div class="how-it-works-description">
+    <h2 class="fw-bold mb-4 text-uppercase text-secondary fade-in">How It Works</h2>
+    <p class="text-muted mb-5 fade-in-delay how-it-works-description">
+      We don’t sell destinations — we create experiences.  
+      Follow your vibe, and let the journey unfold naturally.
+    </p>
+    </div>
+
+    <div class="row g-4">
+      <!-- Step 1 -->
+      <div class="col-md-4 fade-in-up">
+        <div class="p-4 bg-white rounded-4 shadow-sm h-100 d-flex flex-column justify-content-center align-items-center transition-all">
+          <div class="icon mb-3 text-success">
+            <i class="bi bi-compass fs-1"></i>
           </div>
-          <!-- /.col-lg-4 -->
-          <div class="col-lg-4">
-            <!-- <svg
-              aria-label="Placeholder"
-              class="bd-placeholder-img rounded-circle"
-              height="140"
-              preserveAspectRatio="xMidYMid slice"
-              role="img"
-              width="140"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <title>We craft your journey</title>
-              <rect
-                width="100%"
-                height="100%"
-                fill="var(--bs-secondary-color)"
-              ></rect>
-            </svg> -->
-            <h2 class="fw-normal">We craft your journey</h2>
-            <p>
-              Based on your choice, we design a personalized travel package — picking packages, activities, and experiences that match your emotions and lifestyle.
-            </p>
-            <!-- <p>
-              <a class="btn btn-secondary" href="#">View details &raquo;</a>
-            </p> -->
-          </div>
-          <!-- /.col-lg-4 -->
-          <div class="col-lg-4">
-            <!-- <svg
-              aria-label="Placeholder"
-              class="bd-placeholder-img rounded-circle"
-              height="140"
-              preserveAspectRatio="xMidYMid slice"
-              role="img"
-              width="140"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <title>Live it fully</title>
-              <rect
-                width="100%"
-                height="100%"
-                fill="var(--bs-secondary-color)"
-              ></rect>
-            </svg> -->
-            <h2 class="fw-normal">Live it fully</h2>
-            <p>
-              And lastly this, the third column of representative placeholder
-              content.
-            </p>
-            <!-- <p>
-              <a class="btn btn-secondary" href="#">View details &raquo;</a>
-            </p> -->
-          </div>
-          <!-- /.col-lg-4 -->
+          <h5 class="fw-bold mb-3">1. Choose your vibe</h5>
+          <p class="text-muted">
+            Start by selecting the kind of experience you want to feel — 
+            Adventure, Culture, Spirituality, or Wellness.
+          </p>
         </div>
-      <div class="text-center mb-5">
-        <h3>Explore the options</h3>
-        <p class="lead">
-          Whether you crave thrilling adventures, cultural immersions, or tranquil retreats, we have a travel package tailored to your desires.
-        </p>
-        <button type="button" class="btn btn-primary btn-lg px-4">
-          <a href="#options" class="text-white text-decoration-none">View packages</a>
-        </button>
       </div>
-        </section>
+
+      <!-- Step 2 -->
+      <div class="col-md-4 fade-in-up delay-1">
+        <div class="p-4 bg-white rounded-4 shadow-sm h-100 d-flex flex-column justify-content-center align-items-center transition-all">
+          <div class="icon mb-3 text-warning">
+            <i class="bi bi-map fs-1"></i>
+          </div>
+          <h5 class="fw-bold mb-3">2. Discover your journey</h5>
+          <p class="text-muted">
+            We’ll match you with curated travel packages that align 
+            with your mood, energy, and purpose.
+          </p>
+        </div>
+      </div>
+
+      <!-- Step 3 -->
+      <div class="col-md-4 fade-in-up delay-2">
+        <div class="p-4 bg-white rounded-4 shadow-sm h-100 d-flex flex-column justify-content-center align-items-center transition-all">
+          <div class="icon mb-3 text-primary">
+            <i class="bi bi-sun fs-1"></i>
+          </div>
+          <h5 class="fw-bold mb-3">3. Live the experience</h5>
+          <p class="text-muted">
+            Pack light, breathe deeply, and let go — we take care of the rest 
+            while you immerse in your chosen experience.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Button -->
+    <div class="mt-5 fade-in-up delay-3">
+      <a href="#options" class="btn btn-success px-4 py-2 rounded-pill shadow-sm">
+        Discover The Options
+      </a>
+    </div>
+  </div>
+
+</section>
 
         <!-- Options Section  -->
-      <section id="options" class="container">
-
-        <h2 class="options-title text-center fs-1 mb-4">
-        That are the options
-        </h2>
+      <section id="options" class="container my-5">
         
         <div class="row options align-items-center">
           <div class="col-md-7">
@@ -199,25 +170,6 @@
             </p>
           </div>
           <div class="col-md-5">
-            <!-- <svg
-              aria-label="Placeholder: 500x500"
-              class="bd-placeholder-img bd-placeholder-img-lg options-image img-fluid mx-auto"
-              height="500"
-              preserveAspectRatio="xMidYMid slice"
-              role="img"
-              width="500"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <title>Placeholder</title>
-              <rect
-                width="100%"
-                height="100%"
-                fill="var(--bs-secondary-bg)"
-              ></rect>
-              <text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">
-                500x500
-              </text>
-            </svg> -->
               <img src="./img/eco.jpeg" alt="EcoVoyage Image" class="img-fluid rounded options-image">
           
         </div>
@@ -237,25 +189,7 @@
             </p>
           </div>
           <div class="col-md-5 order-md-1">
-            <!-- <svg
-              aria-label="Placeholder: 500x500"
-              class="bd-placeholder-img bd-placeholder-img-lg options-image img-fluid mx-auto"
-              height="500"
-              preserveAspectRatio="xMidYMid slice"
-              role="img"
-              width="500"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <title>Placeholder</title>
-              <rect
-                width="100%"
-                height="100%"
-                fill="var(--bs-secondary-bg)"
-              ></rect>
-              <text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">
-                500x500
-              </text>
-            </svg> -->
+      
               <img src="./img/culture.jpeg" alt="CultureQuest Image" class="img-fluid rounded options-image">
           </div>
         </div>
@@ -275,25 +209,6 @@
             </p>
           </div>
           <div class="col-md-5 options-image-container">
-            <!-- <svg
-              aria-label="Placeholder: 500x500"
-              class="bd-placeholder-img bd-placeholder-img-lg options-image img-fluid mx-auto"
-              height="500"
-              preserveAspectRatio="xMidYMid slice"
-              role="img"
-              width="500"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <title>Placeholder</title>
-              <rect
-                width="100%"
-                height="100%"
-                fill="var(--bs-secondary-bg)"
-              ></rect>
-              <text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">
-                500x500
-              </text>
-            </svg> -->
           <img src="./img/extreme.jpeg" alt="WildTrails Image" class="img-fluid rounded options-image">
         </div>
 
@@ -311,25 +226,7 @@
             </p>
           </div>
           <div class="col-md-5 order-md-1">
-            <!-- <svg
-              aria-label="Placeholder: 500x500"
-              class="bd-placeholder-img bd-placeholder-img-lg options-image img-fluid mx-auto"
-              height="500"
-              preserveAspectRatio="xMidYMid slice"
-              role="img"
-              width="500"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <title>Placeholder</title>
-              <rect
-                width="100%"
-                height="100%"
-                fill="var(--bs-secondary-bg)"
-              ></rect>
-              <text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">
-                500x500
-              </text>
-            </svg> -->
+    
               <img src="./img/spiritual.jpeg" alt="MystiQuest Image" class="img-fluid rounded options-image">
           </div>
         </div>
@@ -350,41 +247,31 @@
             </p>
           </div>
           <div class="col-md-5">
-            <!-- <svg
-              aria-label="Placeholder: 500x500"
-              class="bd-placeholder-img bd-placeholder-img-lg options-image img-fluid mx-auto"
-              height="500"
-              preserveAspectRatio="xMidYMid slice"
-              role="img"
-              width="500"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <title>Placeholder</title>
-              <rect
-                width="100%"
-                height="100%"
-                fill="var(--bs-secondary-bg)"
-              ></rect>
-              <text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">
-                500x500
-              </text>
-            </svg> -->
-
               <img src="./img/mindful.jpeg" alt="WildTrails Image" class="img-fluid rounded options-image">
 
         </div>
-        <hr class="options-divider" />
       </section> 
 
-      <section class="container mb-5 text-center">
-        <h2 class="fs-1 mb-4">Ready to Explore?</h2>
-        <p class="lead mb-4">
-          Start your journey with Travel Explorer today and discover the world in a way that resonates with you.
+    <section class="cta fade-up delay-3">
+      <div class="container">
+        <h2>Ready to Explore?</h2>
+        <p>
+          Start your journey today and discover the world in a way that truly
+          resonates with you.
         </p>
-        <button type="button" class="btn btn-primary btn-lg px-4">
-          <a href="./pages/destinations.html" class="text-white text-decoration-none">Explore packages</a>
-        </button>
-      </section>
+        <a href="./pages/destinations.html">Explore Packages</a>
+      </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
 
     <div class="container">
       <footer
