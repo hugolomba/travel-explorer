@@ -37,17 +37,12 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item fs-4">
-              <a
-                class="nav-link active"
-                aria-current="page"
-                href="../index.html"
+              <a class="nav-link" aria-current="page" href="../index.html"
                 >Home</a
               >
             </li>
             <li class="nav-item fs-4">
-              <a class="nav-link active" href="./destinations.html"
-                >Destinations</a
-              >
+              <a class="nav-link" href="./destinations.html">Destinations</a>
             </li>
             <li class="nav-item fs-4">
               <a class="nav-link active" href="./contact.html">Contact Us</a>
@@ -56,8 +51,87 @@
         </div>
       </div>
     </nav>
-    <h1>Contact Us</h1>
-    <p>If you have any questions, feel free to reach out!</p>
+
+    <section class="text-center my-5">
+      <h1 class="fs-1 mb-4">Contact Us</h1>
+      <p class="fs-4" id="results-text">
+        If you have any questions or inquiries, please feel free to reach out to
+        us.
+      </p>
+    </section>
+
+    <section class="container mb-5">
+      <form
+        class="needs-validation"
+        action="mailto:hmlomba+travelexplorer@gmail.com"
+        novalidate
+      >
+        <div class="mb-3 form-floating">
+          <input
+            type="text"
+            class="form-control"
+            id="name"
+            placeholder="Enter your name"
+            required
+          />
+          <label for="name" class="form-label">Name</label>
+          <div class="invalid-feedback">Please inform your name.</div>
+        </div>
+        <div class="mb-3 form-floating">
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            placeholder="Enter your email"
+            required
+          />
+          <label for="email" class="form-label">Email address</label>
+          <div class="invalid-feedback">Please provide a valid email.</div>
+        </div>
+        <div class="mb-3 form-floating">
+          <!-- pattern for phone number (+ optional and 10-15 digits) -->
+          <input
+            type="tel"
+            class="form-control"
+            id="phone"
+            placeholder="Enter your phone number"
+            pattern="^\+?\d{10,15}$"
+            required
+          />
+          <label for="phone" class="form-label">Phone</label>
+          <div class="invalid-feedback">
+            Please enter a valid phone number (10-15 digits, optional +).
+          </div>
+        </div>
+        <div class="mb-3 form-floating">
+          <select class="form-select" id="subject" required>
+            <option value="" disabled selected>Select your query type</option>
+            <option value="general">Booking</option>
+            <option value="booking">Payment</option>
+            <option value="cancellation">General Info</option>
+            <option value="other">Feedback</option>
+            <option value="other">Other</option>
+          </select>
+          <label for="subject" class="form-label">Query Type</label>
+          <div class="invalid-feedback">Please select a query type.</div>
+        </div>
+        <div class="mb-3 form-floating">
+          <textarea
+            class="form-control"
+            id="message"
+            rows="5"
+            placeholder="Enter your message here"
+            minlength="20"
+            required
+          ></textarea>
+          <label for="message" class="form-label">Message</label>
+          <div class="invalid-feedback">
+            Please enter at least 20 characters.
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </section>
 
     <div class="container">
       <footer
@@ -91,7 +165,9 @@
       crossorigin="anonymous"
     ></script>
 
-    <!-- Custom JavaScript -->
+    <!-- Form Validation Script -->
+
+    <script src="../js/packages.js"></script>
     <script src="../js/script.js"></script>
   </body>
 </html>

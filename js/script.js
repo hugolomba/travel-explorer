@@ -57,108 +57,138 @@ function renderPackages(packages) {
 }
 
 // Event listener for "See all the packages" button
-showAllPackagesButton.addEventListener("click", () => {
-  // Show all packages
-  renderPackages(allPackages);
-  // Hide the button after clicking
-  showAllPackagesButton.classList.add("hidden");
-  // Update the results title
-  resultsTitle.textContent = "All Packages";
-});
+if (showAllPackagesButton) {
+  showAllPackagesButton.addEventListener("click", () => {
+    // Show all packages
+    renderPackages(allPackages);
+    // Hide the button after clicking
+    showAllPackagesButton.classList.add("hidden");
+    // Update the results title
+    resultsTitle.textContent = "All Packages";
+  });
+}
 
 // Function to handle card selection and call the function to display results
-cards.forEach((card) => {
-  card.addEventListener("click", (event) => {
-    // Using dataset to get the experience type
-    selectedCard = event.currentTarget.dataset.experience;
+if (cards.length > 0) {
+  cards.forEach((card) => {
+    card.addEventListener("click", (event) => {
+      // Using dataset to get the experience type
+      selectedCard = event.currentTarget.dataset.experience;
 
-    switch (selectedCard) {
-      case "eco":
-        resultsTitle.textContent = "EcoVoyage – Sustainable Adventures";
-        renderPackages(ecoPackages);
-        break;
-      case "culture":
-        resultsTitle.textContent = "CultureQuest – Food, Art & History";
-        renderPackages(culturePackages);
-        break;
-      case "extreme":
-        resultsTitle.textContent = "WildTrails – Extreme Adventures";
-        renderPackages(extremePackages);
-        break;
-      case "spiritual":
-        resultsTitle.textContent = "MystiQuest – Spiritual & Hidden Journeys";
-        renderPackages(spiritualPackages);
-        break;
-      case "mindful":
-        resultsTitle.textContent = "MindfulGetaway – Wellness & Balance";
-        renderPackages(mindfulPackages);
-        break;
-      default:
-        resultsTitle.textContent = "Available Packages";
-    }
+      switch (selectedCard) {
+        case "eco":
+          resultsTitle.textContent = "EcoVoyage – Sustainable Adventures";
+          renderPackages(ecoPackages);
+          break;
+        case "culture":
+          resultsTitle.textContent = "CultureQuest – Food, Art & History";
+          renderPackages(culturePackages);
+          break;
+        case "extreme":
+          resultsTitle.textContent = "WildTrails – Extreme Adventures";
+          renderPackages(extremePackages);
+          break;
+        case "spiritual":
+          resultsTitle.textContent = "MystiQuest – Spiritual & Hidden Journeys";
+          renderPackages(spiritualPackages);
+          break;
+        case "mindful":
+          resultsTitle.textContent = "MindfulGetaway – Wellness & Balance";
+          renderPackages(mindfulPackages);
+          break;
+        default:
+          resultsTitle.textContent = "Available Packages";
+      }
 
-    // Show results section
-    resultsSection.classList.remove("hidden");
+      // Show results section
+      resultsSection.classList.remove("hidden");
 
-    // Scroll to results section
-    resultsSection.scrollIntoView({ behavior: "smooth" });
+      // Scroll to results section
+      resultsSection.scrollIntoView({ behavior: "smooth" });
+    });
   });
-});
+}
 
 // Event delegation to handle clicks on dynamically created result cards
-resultCardsContainer.addEventListener("click", (event) => {
-  const card = event.target.closest(".card");
-  if (card) {
-    const title = card.querySelector(".card-title").textContent;
+if (resultCardsContainer) {
+  resultCardsContainer.addEventListener("click", (event) => {
+    const card = event.target.closest(".card");
+    if (card) {
+      const title = card.querySelector(".card-title").textContent;
 
-    // Find the destination data based on the title
-    let destinationData = null;
+      // Find the destination data based on the title
+      let destinationData = null;
 
-    destinationData = allPackages.find((dest) => dest.title === title);
+      destinationData = allPackages.find((dest) => dest.title === title);
 
-    if (destinationData) {
-      const modal = document.createElement("div");
-      modal.classList.add("modal-content");
-      modal.innerHTML = `
-       <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="modalTitle">${destinationData.title}</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      if (destinationData) {
+        const modal = document.createElement("div");
+        modal.classList.add("modal-content");
+        modal.innerHTML = `
+         <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalTitle">${destinationData.title}</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+        
+          <h6 id="modalSubtitle" class="text-body-secondary">${
+            destinationData.subtitle
+          }</h6>
+          <p id="modalDescription">${destinationData.description}</p>
+          <hr>
+          <h6>Itinerary</h6>
+          <ul id="modalItinerary">${destinationData.itinerary
+            .map((item) => `<li>${item}</li>`)
+            .join("")}</ul>
+          <ul class="list-group list-group-flush mt-3">
+            <li id="modalDuration" class="list-group-item"><strong>Duration:</strong> ${
+              destinationData.duration
+            }</li>
+            <li id="modalPrice" class="list-group-item"><strong>Price:</strong> ${
+              destinationData.price
+            }</li>
+            <li id="modalDifficulty" class="list-group-item"><strong>Difficulty:</strong> ${
+              destinationData.difficulty
+            }</li>
+            <li id="modalBestTime" class="list-group-item"><strong>Best Time To Travel:</strong> ${
+              destinationData.bestTime
+            }</li>
+          </ul>
+        </div>
+        <div class="modal-footer justify-content-center">
+          <a href="./contact.html" class="btn btn-primary">Book Now</a>
+        </div>
       </div>
-      <div class="modal-body">
-      
-        <h6 id="modalSubtitle" class="text-body-secondary">${
-          destinationData.subtitle
-        }</h6>
-        <p id="modalDescription">${destinationData.description}</p>
-        <hr>
-        <h6>Itinerary</h6>
-        <ul id="modalItinerary">${destinationData.itinerary
-          .map((item) => `<li>${item}</li>`)
-          .join("")}</ul>
-        <ul class="list-group list-group-flush mt-3">
-          <li id="modalDuration" class="list-group-item"><strong>Duration:</strong> ${
-            destinationData.duration
-          }</li>
-          <li id="modalPrice" class="list-group-item"><strong>Price:</strong> ${
-            destinationData.price
-          }</li>
-          <li id="modalDifficulty" class="list-group-item"><strong>Difficulty:</strong> ${
-            destinationData.difficulty
-          }</li>
-          <li id="modalBestTime" class="list-group-item"><strong>Best Time To Travel:</strong> ${
-            destinationData.bestTime
-          }</li>
-        </ul>
-      </div>
-      <div class="modal-footer justify-content-center">
-        <a href="./contact.html" class="btn btn-primary">Book Now</a>
-      </div>
-    </div>
-      `;
-      // Clear previous modal content and append new content
-      modalContainer.innerHTML = "";
-      modalContainer.appendChild(modal);
+        `;
+        // Clear previous modal content and append new content
+        modalContainer.innerHTML = "";
+        modalContainer.appendChild(modal);
+      }
     }
-  }
-});
+  });
+}
+
+// FORM VALIDATION SCRIPT
+(() => {
+  "use strict";
+
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  const forms = document.querySelectorAll(".needs-validation");
+
+  // Loop over them and prevent submission
+  Array.from(forms).forEach((form) => {
+    form.addEventListener(
+      "submit",
+      (event) => {
+        if (!form.checkValidity()) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+
+        form.classList.add("was-validated");
+      },
+      false
+    );
+  });
+})();

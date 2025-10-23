@@ -9,7 +9,7 @@ body {
 }
 
 .logo-custom {
-  width: 4rem;
+  width: 8rem;
 }
 
 .hero-section {
@@ -37,14 +37,13 @@ body {
 }
 
 .how-it-works-title {
-  margin-bottom: 5rem;
-  margin-top: 5rem;
+  margin-top: 3rem;
 }
 
 /* Options Section */
 
 .options-divider {
-  margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+  margin: 2.5rem 0; /* Space out the Bootstrap <hr> more */
 }
 
 /* Thin out the marketing headings */
@@ -55,8 +54,8 @@ body {
 
 .options-image {
   object-fit: cover;
-  width: 500px;
-  height: 500px;
+  width: 400px;
+  height: 300px;
 }
 
 /* CARD STYLES
@@ -87,7 +86,7 @@ body {
   }
 }
 
-/* packages.HTML */
+/* destinations.html */
 
 .card {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -154,8 +153,14 @@ body {
   }
 }
 
-@media (min-width: 62em) {
+/* @media (min-width: 62em) {
   .options-heading {
     margin-top: 7rem;
+  }
+} */
+
+@media (max-width: 768px) {
+  .how-it-works-title {
+    margin: 2rem 0 2.5rem;
   }
 }
