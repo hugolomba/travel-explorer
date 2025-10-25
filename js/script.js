@@ -30,7 +30,7 @@ function renderPackages(packages) {
     card.classList.add("col");
     card.innerHTML = `
     <div class="col">
-      <div class="card h-100" data-bs-toggle="modal" data-bs-target="#detailsModal">
+      <div class="card result-card h-100" data-bs-toggle="modal" data-bs-target="#detailsModal">
         <img src="${dest.image}" class="card-img-top result-card-image" alt="${dest.title}" />
         <div class="card-body">
           <h5 class="card-title">${dest.title}</h5>
@@ -157,7 +157,7 @@ if (resultCardsContainer) {
           </ul>
         </div>
         <div class="modal-footer justify-content-center">
-          <a href="./contact.html" class="btn btn-primary">Book Now</a>
+          <a href="./contact.html" class="btn-custom rounded-pill px-4 py-2">Book Now</a>
         </div>
       </div>
         `;

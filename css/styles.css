@@ -17,6 +17,10 @@ body {
   color: #df6951;
 }
 
+.nav-link:hover {
+  color: #de8c7b;
+}
+
 .logo-custom {
   width: 8rem;
 }
@@ -68,12 +72,14 @@ body {
   letter-spacing: 1px;
 }
 
-.how-it-works a.btn-success {
+.btn-custom {
   background-color: #df6951;
   border: none;
+  text-decoration: none;
+  color: white;
 }
 
-.how-it-works a.btn-success:hover {
+.btn-custom:hover {
   background-color: #de8c7b;
 }
 
@@ -133,36 +139,6 @@ body {
 
 /* destinations.html */
 
-.card {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  cursor: pointer;
-}
-
-.card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-}
-
-.card-eco:hover {
-  background-color: #00d87b;
-}
-
-.card-culture:hover {
-  background-color: #f4f162;
-}
-
-.card-extreme:hover {
-  background-color: #f94960;
-}
-
-.card-mindful:hover {
-  background-color: #c22df0;
-}
-
-.card-spiritual:hover {
-  background-color: #40c7e9;
-}
-
 .result-card-image {
   width: 100%;
   height: 300px;
@@ -171,6 +147,21 @@ body {
 
 .hidden {
   display: none;
+}
+
+.result-card {
+  cursor: pointer;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  cursor: pointer;
+  position: relative;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.result-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
 }
 
 /* MODAL STYLES
@@ -243,14 +234,68 @@ body {
   }
 }
 
-/* @media (min-width: 62em) {
-  .options-heading {
-    margin-top: 7rem;
-  }
-} */
-
 @media (max-width: 768px) {
   .how-it-works-title {
     margin: 2rem 0 2.5rem;
   }
+}
+
+/* ====== Cards Section ====== */
+.options-card {
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  cursor: pointer;
+  position: relative;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.options-card img {
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+/* Effects hover the mouse */
+.options-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.options-card:hover img {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+
+.options-card-title {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  transition: all 0.5s ease;
+  letter-spacing: 1px;
+}
+
+.options-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.options-card:hover::after {
+  opacity: 1;
+}
+
+.options-card:hover .options-card-title {
+  bottom: 50%;
+  transform: translate(-50%, 50%);
+  opacity: 1;
 }

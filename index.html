@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Travel Explorer helps you find travel experiences that match your vibe — from adventure to mindfulness."
+    />
     <title>Travel Explorer</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
@@ -19,7 +23,7 @@
 
   <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg px-10">
+    <nav class="navbar navbar-expand-lg px-4">
       <div class="navbar-container container-fluid">
         <a class="navbar-brand" href="./index.html">
           <img
@@ -27,7 +31,6 @@
             alt="Logo"
             class="d-inline-block align-text-middle logo-custom"
           />
-         
         </a>
         <button
           class="navbar-toggler"
@@ -43,213 +46,294 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item fs-4">
-              <a class="nav-link active-nav-link" aria-current="page" href="./index.html">Home</a>
+              <a
+                class="nav-link active-nav-link"
+                aria-current="page"
+                href="./index.html"
+                >Home</a
+              >
             </li>
             <li class="nav-item fs-4">
-              <a class="nav-link" href="./pages/destinations.html">Destinations</a>
+              <a class="nav-link" href="./pages/destinations.html"
+                >Destinations</a
+              >
             </li>
             <li class="nav-item fs-4">
               <a class="nav-link" href="./pages/contact.html">Contact Us</a>
             </li>
           </ul>
         </div>
-
+      </div>
     </nav>
 
+    <section class="container hero-section">
+      <div class="row align-items-center h-100 -5">
+        <div class="col-md-6">
+          <span class="hero-span fw-bold"
+            >YOU DON'T CHOOSE ONLY A DESTINATION</span
+          >
+          <h1 class="hero-title">
+            With Travel Explorer, you choose
+            <span class="hero-span">how you want to feel.</span>
+          </h1>
+          <p class="lead">
+            From wild adventures to mindful escapes, we’ll match you with the
+            perfect experience.
+          </p>
+          <a
+            href="#how-it-works"
+            class="btn btn-primary rounded-pill hero-button"
+            >Discover!</a
+          >
+        </div>
 
-      
-  <section class="container hero-section">
-    <div class="row align-items-center h-100 -5">
-      <div class="col-md-6">
-        <span class="hero-span fw-bold">YOU DON'T CHOOSE ONLY A DESTINATION</span>
-        <h1 class="hero-title">With Travel Explorer, you choose <span class="hero-span">how you want to feel.</span></h1>
-        <p class="lead">From wild adventures to mindful escapes, we’ll match you with the perfect experience.</p>
-        <a href="#how-it-works" class="btn btn-primary rounded-pil hero-button">Discover!</a>
-
-      </div>
- 
-      <div class="col-md-6 d-flex h-100 p-5 justify-content-end">
-
-
-          <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade w-100" data-bs-ride="carousel">
+        <div class="col-md-6 d-flex h-100 py-5 justify-content-end">
+          <div
+            id="carouselExampleSlidesOnly"
+            class="carousel slide carousel-fade w-100"
+            data-bs-ride="carousel"
+          >
             <div class="carousel-inner h-100">
-              <div class="carousel-item  h-100 active" data-bs-interval="3000">
-                <img src="./img/eco-packages/bali.avif" class="d-block w-100 hero-img" alt="Iceland">
+              <div class="carousel-item h-100 active" data-bs-interval="3000">
+                <img
+                  src="./img/eco-packages/bali.avif"
+                  class="d-block w-100 hero-img"
+                  alt="Iceland"
+                />
               </div>
               <div class="carousel-item h-100" data-bs-interval="3000">
-                <img src="./img/culture-packages/italy.jpeg" class="d-block w-100 hero-img" alt="Italy">
+                <img
+                  src="./img/culture-packages/italy.jpeg"
+                  class="d-block w-100 hero-img"
+                  alt="Italy"
+                />
               </div>
               <div class="carousel-item h-100" data-bs-interval="3000">
-                <img src="./img/extreme-packages/argentina.avif" class="d-block w-100 hero-img" alt="Amazon">
+                <img
+                  src="./img/extreme-packages/argentina.avif"
+                  class="d-block w-100 hero-img"
+                  alt="wild travel to argentina"
+                />
               </div>
               <div class="carousel-item h-100" data-bs-interval="3000">
-                <img src="./img/mindful-packages/switzerland.jpg" class="d-block w-100 hero-img" alt="Switzerland">
+                <img
+                  src="./img/mindful-packages/switzerland.jpg"
+                  class="d-block w-100 hero-img"
+                  alt="Switzerland"
+                />
               </div>
               <div class="carousel-item h-100" data-bs-interval="3000">
-                <img src="./img/spiritual-packages/india.jpg" class="d-block w-100 hero-img" alt="Amazon">
+                <img
+                  src="./img/spiritual-packages/india.jpg"
+                  class="d-block w-100 hero-img"
+                  alt="Spiritual travel to india"
+                />
               </div>
             </div>
-           </div>
-
-        
-      </div>
-    </div>
-  </section>
-
-      <!-- How It Works Section -->
-
-<section id="how-it-works" class="how-it-works py-5 text-center position-relative text-dark">
-
-  <div class="container-fluid position-relative z-1 d-flex gap-4 flex-column justify-content-evenly align-items-center">
-    <div class="how-it-works-description">
-    <h2 class="fw-bold mb-4 text-uppercase text-secondary fade-in">How It Works</h2>
-    <p class="text-muted mb-5 fade-in-delay how-it-works-description">
-      We don’t sell destinations — we create experiences.  
-      Follow your vibe, and let the journey unfold naturally.
-    </p>
-    </div>
-
-    <div class="row g-4">
-      <!-- Step 1 -->
-      <div class="col-md-4 fade-in-up">
-        <div class="p-4 bg-white rounded-4 shadow-sm h-100 d-flex flex-column justify-content-center align-items-center transition-all">
-          <div class="icon mb-3 text-success">
-            <i class="bi bi-compass fs-1"></i>
           </div>
-          <h5 class="fw-bold mb-3">1. Choose your vibe</h5>
-          <p class="text-muted">
-            Start by selecting the kind of experience you want to feel — 
-            Adventure, Culture, Spirituality, or Wellness.
+        </div>
+      </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section
+      id="how-it-works"
+      class="how-it-works py-5 text-center position-relative text-dark"
+    >
+      <div
+        class="container-fluid position-relative z-1 d-flex flex-column justify-content-evenly align-items-center"
+      >
+        <div class="how-it-works-description">
+          <h2 class="fw-bold mb-4 text-uppercase text-secondary fade-in">
+            How It Works
+          </h2>
+          <p class="text-muted mb-5 fade-in-delay">
+            We don’t sell destinations — we create experiences. Follow your
+            vibe, and let the journey unfold naturally.
           </p>
         </div>
-      </div>
 
-      <!-- Step 2 -->
-      <div class="col-md-4 fade-in-up delay-1">
-        <div class="p-4 bg-white rounded-4 shadow-sm h-100 d-flex flex-column justify-content-center align-items-center transition-all">
-          <div class="icon mb-3 text-warning">
-            <i class="bi bi-map fs-1"></i>
+        <div class="row g-4">
+          <!-- Step 1 -->
+          <div class="col-md-4 fade-in-up">
+            <div
+              class="p-4 bg-white rounded-4 shadow-sm h-100 d-flex flex-column justify-content-center align-items-center transition-all"
+            >
+              <div class="icon mb-3 text-success">
+                <i class="bi bi-compass fs-1"></i>
+              </div>
+              <h5 class="fw-bold mb-3">1. Choose your vibe</h5>
+              <p class="text-muted">
+                Start by selecting the kind of experience you want to feel —
+                Adventure, Culture, Spirituality, or Wellness.
+              </p>
+            </div>
           </div>
-          <h5 class="fw-bold mb-3">2. Discover your journey</h5>
-          <p class="text-muted">
-            We’ll match you with curated travel packages that align 
-            with your mood, energy, and purpose.
+
+          <!-- Step 2 -->
+          <div class="col-md-4 fade-in-up delay-1">
+            <div
+              class="p-4 bg-white rounded-4 shadow-sm h-100 d-flex flex-column justify-content-center align-items-center transition-all"
+            >
+              <div class="icon mb-3 text-warning">
+                <i class="bi bi-map fs-1"></i>
+              </div>
+              <h5 class="fw-bold mb-3">2. Discover your journey</h5>
+              <p class="text-muted">
+                We’ll match you with curated travel packages that align with
+                your mood, energy, and purpose.
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="col-md-4 fade-in-up delay-2">
+            <div
+              class="p-4 bg-white rounded-4 shadow-sm h-100 d-flex flex-column justify-content-center align-items-center transition-all"
+            >
+              <div class="icon mb-3 text-primary">
+                <i class="bi bi-sun fs-1"></i>
+              </div>
+              <h5 class="fw-bold mb-3">3. Live the experience</h5>
+              <p class="text-muted">
+                Pack light, breathe deeply, and let go — we take care of the
+                rest while you immerse in your chosen experience.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Button -->
+        <div class="mt-5 fade-in-up delay-3">
+          <a
+            href="#options"
+            class="btn-custom px-4 py-2 rounded-pill shadow-sm"
+          >
+            Discover The Options
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Options Section  -->
+    <section id="options" class="container m-auto p-5">
+      <div class="row options align-items-center fade-in-up">
+        <div class="col-6 transition-all">
+          <h2 class="options-heading fw-normal lh-1 align-items-center">
+            Eco Experience -
+            <span class="text-body-secondary">Sustainable Adventures</span>
+          </h2>
+          <p class="lead">
+            Embark on journeys that connect you with nature while respecting the
+            planet. From eco-lodges to sustainable tours, experience
+            breathtaking landscapes and adventures that leave a positive impact.
           </p>
         </div>
-      </div>
-
-      <!-- Step 3 -->
-      <div class="col-md-4 fade-in-up delay-2">
-        <div class="p-4 bg-white rounded-4 shadow-sm h-100 d-flex flex-column justify-content-center align-items-center transition-all">
-          <div class="icon mb-3 text-primary">
-            <i class="bi bi-sun fs-1"></i>
-          </div>
-          <h5 class="fw-bold mb-3">3. Live the experience</h5>
-          <p class="text-muted">
-            Pack light, breathe deeply, and let go — we take care of the rest 
-            while you immerse in your chosen experience.
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Button -->
-    <div class="mt-5 fade-in-up delay-3">
-      <a href="#options" class="btn btn-success px-4 py-2 rounded-pill shadow-sm">
-        Discover The Options
-      </a>
-    </div>
-  </div>
-
-</section>
-
-        <!-- Options Section  -->
-      <section id="options" class="container m-auto p-5">
-        
-        <div class="row options align-items-center fade-in-up">
-          <div class="col-6 transition-all">
-            <h2 class="options-heading fw-normal lh-1 align-items-center">
-              Eco Experience -
-              <span class="text-body-secondary">Sustainable Adventures</span>
-            </h2>
-            <p class="lead">
-              Embark on journeys that connect you with nature while respecting the planet. From eco-lodges to sustainable tours, experience breathtaking landscapes and adventures that leave a positive impact.
-            </p>
-          </div>
-          <div class="col-6 d-flex align-items-center justify-content-end">
-              <img src="./img/eco.jpeg" alt="Eco Experience Image" class="img-fluid rounded options-image fade-in-up">
-          </div>
-        </div>
-
-       
-        <hr class="options-divider " />
-
-        <div class="row options align-items-center fade-in-up">
-          <div class="col-6 order-md-2">
-            <h2 class="options-heading fw-normal lh-1">
-              Culture Experience -
-              <span class="text-body-secondary">Food, Art & History</span>
-            </h2>
-            <p class="lead">
-              Immerse yourself in the richness of local cultures. Taste authentic cuisine, explore historic sites, and enjoy art, music, and traditions that reveal the heart and soul of each destination.
-            </p>
-          </div>
-          <div class="col-6 order-md-1 d-flex align-items-center justify-content-start">
-              <img src="./img/culture.jpeg" alt="Culture Experience Image" class="img-fluid rounded options-image fade-in-up">
-          </div>
-        </div>
-
-        <hr class="options-divider" />
-
-        <div class="row options align-items-center fade-in-up">
-          <div class="col-6">
-            <h2 class="options-heading fw-normal lh-1">
-              Wild Experience -
-              <span class="text-body-secondary">Extreme Adventures</span>
-            </h2>
-            <p class="lead">
-              Push your limits with thrilling outdoor activities. Conquer mountains, dive into rapids, or soar through the skies—this experience is designed for adrenaline seekers and adventure lovers.
-            </p>
-          </div>
         <div class="col-6 d-flex align-items-center justify-content-end">
-          <img src="./img/extreme.jpeg" alt="Wild Experience Image" class="img-fluid rounded options-image fade-in-up">
+          <img
+            src="./img/eco.jpeg"
+            alt="Eco Experience Image"
+            class="img-fluid rounded options-image fade-in-up"
+          />
         </div>
+      </div>
 
-        <hr class="options-divider" />
+      <hr class="options-divider" />
 
-        <div class="row options align-items-center fade-in-up">
-          <div class="col-6 order-md-2">
-            <h2 class="options-heading fw-normal lh-1">
-              Mystical Experience -
-              <span class="text-body-secondary">Spiritual & Hidden Journeys</span>
-            </h2>
-            <p class="lead">
-              Discover the unseen and explore hidden paths to spiritual growth. Engage in meditation, sacred rituals, and journeys that awaken your mind, body, and soul.
-            </p>
-          </div>
-          <div class="col-6 order-md-1 d-flex align-items-center justify-content-start">
-
-             <img src="./img/spiritual.jpeg" alt="Mystical Experience Image" class="img-fluid rounded options-image fade-in-up">
-          </div>
+      <div class="row options align-items-center fade-in-up">
+        <div class="col-6 order-md-2">
+          <h2 class="options-heading fw-normal lh-1">
+            Culture Experience -
+            <span class="text-body-secondary">Food, Art & History</span>
+          </h2>
+          <p class="lead">
+            Immerse yourself in the richness of local cultures. Taste authentic
+            cuisine, explore historic sites, and enjoy art, music, and
+            traditions that reveal the heart and soul of each destination.
+          </p>
         </div>
-
-        <hr class="options-divider" />
-
-        <div class="row options align-items-center fade-in-up">
-          <div class="col-6">
-            <h2 class="options-heading fw-normal lh-1">
-              Mindful Experience -
-              <span class="text-body-secondary">Wellness & Balance</span>
-            </h2>
-            <p class="lead">
-              Prioritize your well-being with retreats focused on relaxation, self-care, and mindfulness. Yoga, meditation, spa therapies, and balanced lifestyles help you recharge and find harmony.
-            </p>
-          </div>
-          <div class="col-6 d-flex align-items-center justify-content-end">
-              <img src="./img/mindful.jpeg" alt="Mindful Experience Image" class="img-fluid rounded options-image fade-in-up">
-
+        <div
+          class="col-6 order-md-1 d-flex align-items-center justify-content-start"
+        >
+          <img
+            src="./img/culture.jpeg"
+            alt="Culture Experience Image"
+            class="img-fluid rounded options-image fade-in-up"
+          />
         </div>
-      </section> 
+      </div>
+
+      <hr class="options-divider" />
+
+      <div class="row options align-items-center fade-in-up">
+        <div class="col-6">
+          <h2 class="options-heading fw-normal lh-1">
+            Wild Experience -
+            <span class="text-body-secondary">Extreme Adventures</span>
+          </h2>
+          <p class="lead">
+            Push your limits with thrilling outdoor activities. Conquer
+            mountains, dive into rapids, or soar through the skies—this
+            experience is designed for adrenaline seekers and adventure lovers.
+          </p>
+        </div>
+        <div class="col-6 d-flex align-items-center justify-content-end">
+          <img
+            src="./img/extreme.jpeg"
+            alt="Wild Experience Image"
+            class="img-fluid rounded options-image fade-in-up"
+          />
+        </div>
+      </div>
+
+      <hr class="options-divider" />
+
+      <div class="row options align-items-center fade-in-up">
+        <div class="col-6 order-md-2">
+          <h2 class="options-heading fw-normal lh-1">
+            Mystical Experience -
+            <span class="text-body-secondary">Spiritual & Hidden Journeys</span>
+          </h2>
+          <p class="lead">
+            Discover the unseen and explore hidden paths to spiritual growth.
+            Engage in meditation, sacred rituals, and journeys that awaken your
+            mind, body, and soul.
+          </p>
+        </div>
+        <div
+          class="col-6 order-md-1 d-flex align-items-center justify-content-start"
+        >
+          <img
+            src="./img/spiritual.jpeg"
+            alt="Mystical Experience Image"
+            class="img-fluid rounded options-image fade-in-up"
+          />
+        </div>
+      </div>
+
+      <hr class="options-divider" />
+
+      <div class="row options align-items-center fade-in-up">
+        <div class="col-6">
+          <h2 class="options-heading fw-normal lh-1">
+            Mindful Experience -
+            <span class="text-body-secondary">Wellness & Balance</span>
+          </h2>
+          <p class="lead">
+            Prioritize your well-being with retreats focused on relaxation,
+            self-care, and mindfulness. Yoga, meditation, spa therapies, and
+            balanced lifestyles help you recharge and find harmony.
+          </p>
+        </div>
+        <div class="col-6 d-flex align-items-center justify-content-end">
+          <img
+            src="./img/mindful.jpeg"
+            alt="Mindful Experience Image"
+            class="img-fluid rounded options-image fade-in-up"
+          />
+        </div>
+      </div>
+    </section>
 
     <section class="cta fade-up delay-3">
       <div class="container">
@@ -261,16 +345,6 @@
         <a href="./pages/destinations.html">Explore Packages</a>
       </div>
     </section>
-
-
-
-
-
-
-
-
-
-
 
     <div class="container">
       <footer
@@ -284,13 +358,16 @@
           class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
           aria-label="Bootstrap"
         >
-  
         </a>
-          <p class="col-md-4 mb-0 text-body-secondary text-end">
-          Developed by <a href="https://www.hugo-miranda.dev" class="text-decoration-none" target="_blank">Hugo Lomba</a>
+        <p class="col-md-4 mb-0 text-body-secondary text-end">
+          Developed by
+          <a
+            href="https://www.hugo-miranda.dev"
+            class="text-decoration-none"
+            target="_blank"
+            >Hugo Lomba</a
+          >
         </p>
-
-        
       </footer>
     </div>
 
@@ -303,6 +380,5 @@
 
     <!-- Custom JavaScript -->
     <script src="./js/script.js"></script>
-    
   </body>
 </html>

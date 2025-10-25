@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Explore curated travel experiences — from eco adventures to mindful escapes — with Travel Explorer."
+    />
     <title>Destinations</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
@@ -13,15 +17,15 @@
     <link href="../css/styles.css" rel="stylesheet" />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary px-4">
-      <div class="container-fluid">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg px-4">
+      <div class="navbar-container container-fluid">
         <a class="navbar-brand" href="../index.html">
           <img
-            src="../img/temp-logo.png"
+            src="../img/logo4-new.png"
             alt="Logo"
             class="d-inline-block align-text-middle logo-custom"
           />
-          Travel Explorer
         </a>
         <button
           class="navbar-toggler"
@@ -62,104 +66,109 @@
     </section>
 
     <!-- cards -->
-
     <section class="g-4 px-5 min-vh-100" id="cards-section">
-      <div class="row row-cols-1 row-cols-lg-5">
-        <div class="col">
-          <div class="card h-100 card-eco options-card" data-experience="eco">
+      <div class="row row-cols-1 row-cols-lg-5 row-cols-sm-2 g-4">
+        <div class="col position-relative">
+          <div class="h-100 card-eco options-card">
             <img
               src="../img/eco.jpeg"
-              class="card-img-top card-image"
+              class="card-img-top card-image h-100"
               alt="Eco Destination"
             />
-            <div class="card-body">
-              <h5 class="card-title">Eco Adventure</h5>
-              <p class="card-text">
+            <div class="card-body content">
+              <h5 class="options-card-title text-center">ECO EXPERIENCE</h5>
+              <!-- <p class="card-text">
                 This is a longer card with supporting text below as a natural
                 lead-in to additional content. This content is a little bit
                 longer.
-              </p>
+              </p> -->
             </div>
           </div>
         </div>
 
         <div class="col">
           <div
-            class="card h-100 card-culture options-card"
+            class="h-100 card-culture options-card"
             data-experience="culture"
           >
             <img
               src="../img/culture.jpeg"
-              class="card-img-top card-image"
+              class="card-img-top card-image h-100"
               alt="Cultural Experience"
             />
             <div class="card-body">
-              <h5 class="card-title">Cultural Experience</h5>
-              <p class="card-text">
+              <h5 class="options-card-title text-center">
+                CULTURAL EXPERIENCE
+              </h5>
+              <!-- <p class="card-text">
                 This is a longer card with supporting text below as a natural
                 lead-in to additional content. This content is a little bit
                 longer.
-              </p>
+              </p> -->
             </div>
           </div>
         </div>
 
         <div class="col">
           <div
-            class="card h-100 card-extreme options-card"
+            class="h-100 card-extreme options-card"
             data-experience="extreme"
           >
             <img
               src="../img/extreme.jpeg"
-              class="card-img-top card-image"
+              class="card-img-top card-image h-100"
               alt="Extreme Adventure"
             />
             <div class="card-body">
-              <h5 class="card-title">Extreme Adventure</h5>
-              <p class="card-text">
+              <h5 class="options-card-title text-center">WILD EXPERIENCE</h5>
+              <!-- <p class="card-text">
                 This is a longer card with supporting text below as a natural
                 lead-in to additional content. This content is a little bit
                 longer.
-              </p>
+              </p> -->
             </div>
           </div>
         </div>
+
         <div class="col">
           <div
-            class="card h-100 card-mindful options-card"
+            class="h-100 card-mindful options-card"
             data-experience="mindful"
           >
             <img
               src="../img/mindful.jpeg"
-              class="card-img-top card-image"
+              class="card-img-top card-image h-100"
               alt="Mindful Experience"
             />
             <div class="card-body">
-              <h5 class="card-title">Mindful Experience</h5>
-              <p class="card-text">
+              <h5 class="options-card-title text-center">MINDFUL EXPERIENCE</h5>
+              <!-- <p class="card-text">
                 This is a longer card with supporting text below as a natural
                 lead-in to additional content.
-              </p>
+              </p> -->
             </div>
           </div>
         </div>
+
         <div class="col">
           <div
-            class="card h-100 card-spiritual options-card"
+            class="h-100 card-spiritual options-card"
             data-experience="spiritual"
           >
             <img
               src="../img/spiritual.jpeg"
-              class="card-img-top card-image"
+              class="card-img-top card-image h-100"
               alt="Spiritual Experience"
             />
             <div class="card-body">
-              <h5 class="card-title">Spiritual Experience</h5>
-              <p class="card-text">
+              <h5 class="options-card-title text-center">
+                SPIRITUAL EXPERIENCE
+              </h5>
+              <!-- <p class="card-text">
                 This is a longer card with supporting text below as a natural
                 lead-in to additional content. This content is a little bit
                 longer.
-              </p>
+              </p> -->
             </div>
           </div>
         </div>
@@ -167,15 +176,18 @@
     </section>
 
     <!-- Results Section -->
-
-    <section id="results-section" class="my-5 text-center min-vh-100 hidden">
+    <section
+      id="results-section"
+      class="my-5 text-center min-vh-100 hidden py-5"
+    >
       <h2 id="results-title" class="fs-2 mb-4"></h2>
       <div id="result-cards" class="row row-cols-1 row-cols-lg-3 g-4 m-4">
         <!-- Destination cards will be dynamically inserted here -->
       </div>
+      <!-- Functionality handled with JavaScript -->
       <button
         type="button"
-        class="btn btn-primary btn-lg px-4 mt-4"
+        class="btn-custom px-4 py-2 mt-4 rounded-pill shadow-sm"
         id="show-all-packages"
       >
         See all the packages
