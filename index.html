@@ -20,10 +20,10 @@
   <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg px-10">
-      <div class="container-fluid">
+      <div class="navbar-container container-fluid">
         <a class="navbar-brand" href="./index.html">
           <img
-            src="./img/logobase.png"
+            src="./img/logo4-new.png"
             alt="Logo"
             class="d-inline-block align-text-middle logo-custom"
           />
@@ -43,7 +43,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item fs-4">
-              <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+              <a class="nav-link active-nav-link" aria-current="page" href="./index.html">Home</a>
             </li>
             <li class="nav-item fs-4">
               <a class="nav-link" href="./pages/destinations.html">Destinations</a>
@@ -55,44 +55,52 @@
         </div>
 
     </nav>
-    <!-- Hero Section -->
-    <section class="hero-section container-fluid">
-      <div class="container col-8 px-4 py-5">
-        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-          <div class="col-10 col-sm-8 col-lg-6">
-            <img
-              src="./img/logo6.png"
-              class="d-block mx-lg-auto img-fluid"
-              alt="Bootstrap Themes"
-              width="700"
-              height="500"
-              loading="lazy"
-            />
-          </div>
-          <div class="col-lg-6">
-            <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">
-              Found a new EXPERIENCE
-            </h1>
-            <p class="lead">
-              With Travel Explorer you can explore travel packages 
-              based in what kind of experience you want to have.
-              <br />
-              From wild adventures to mindful escapes. We’ll find the perfect destination for you.
-            </p>
-            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-              <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">
-                <a href="#how-it-works" class="text-white text-decoration-none">Learn More</a>
-              </button>
+
+
+      
+  <section class="container hero-section">
+    <div class="row align-items-center h-100 -5">
+      <div class="col-md-6">
+        <span class="hero-span fw-bold">YOU DON'T CHOOSE ONLY A DESTINATION</span>
+        <h1 class="hero-title">With Travel Explorer, you choose <span class="hero-span">how you want to feel.</span></h1>
+        <p class="lead">From wild adventures to mindful escapes, we’ll match you with the perfect experience.</p>
+        <a href="#how-it-works" class="btn btn-primary rounded-pil hero-button">Discover!</a>
+
+      </div>
+ 
+      <div class="col-md-6 d-flex h-100 p-5 justify-content-end">
+
+
+          <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade w-100" data-bs-ride="carousel">
+            <div class="carousel-inner h-100">
+              <div class="carousel-item  h-100 active" data-bs-interval="3000">
+                <img src="./img/eco-packages/bali.avif" class="d-block w-100 hero-img" alt="Iceland">
+              </div>
+              <div class="carousel-item h-100" data-bs-interval="3000">
+                <img src="./img/culture-packages/italy.jpeg" class="d-block w-100 hero-img" alt="Italy">
+              </div>
+              <div class="carousel-item h-100" data-bs-interval="3000">
+                <img src="./img/extreme-packages/argentina.avif" class="d-block w-100 hero-img" alt="Amazon">
+              </div>
+              <div class="carousel-item h-100" data-bs-interval="3000">
+                <img src="./img/mindful-packages/switzerland.jpg" class="d-block w-100 hero-img" alt="Switzerland">
+              </div>
+              <div class="carousel-item h-100" data-bs-interval="3000">
+                <img src="./img/spiritual-packages/india.jpg" class="d-block w-100 hero-img" alt="Amazon">
+              </div>
             </div>
-          </div>
-        </div>
-      </section>
+           </div>
+
+        
+      </div>
+    </div>
+  </section>
 
       <!-- How It Works Section -->
 
-<section id="how-it-works" class="how-it-works py-5 text-center position-relative text-dark ">
+<section id="how-it-works" class="how-it-works py-5 text-center position-relative text-dark">
 
-  <div class="container-fluid position-relative z-1 d-flex flex-column justify-content-evenly align-items-center">
+  <div class="container-fluid position-relative z-1 d-flex gap-4 flex-column justify-content-evenly align-items-center">
     <div class="how-it-works-description">
     <h2 class="fw-bold mb-4 text-uppercase text-secondary fade-in">How It Works</h2>
     <p class="text-muted mb-5 fade-in-delay how-it-works-description">
@@ -156,98 +164,89 @@
 </section>
 
         <!-- Options Section  -->
-      <section id="options" class="container my-5">
+      <section id="options" class="container m-auto p-5">
         
-        <div class="row options align-items-center">
-          <div class="col-md-7">
+        <div class="row options align-items-center fade-in-up">
+          <div class="col-6 transition-all">
             <h2 class="options-heading fw-normal lh-1 align-items-center">
-              EcoVoyage -
+              Eco Experience -
               <span class="text-body-secondary">Sustainable Adventures</span>
             </h2>
             <p class="lead">
-              Some great placeholder content for the first options here.
-              Imagine some exciting prose here.
+              Embark on journeys that connect you with nature while respecting the planet. From eco-lodges to sustainable tours, experience breathtaking landscapes and adventures that leave a positive impact.
             </p>
           </div>
-          <div class="col-md-5">
-              <img src="./img/eco.jpeg" alt="EcoVoyage Image" class="img-fluid rounded options-image">
-          
+          <div class="col-6 d-flex align-items-center justify-content-end">
+              <img src="./img/eco.jpeg" alt="Eco Experience Image" class="img-fluid rounded options-image fade-in-up">
+          </div>
         </div>
 
        
         <hr class="options-divider " />
-        <div class="row options align-items-center">
-          <div class="col-md-7 order-md-2">
+
+        <div class="row options align-items-center fade-in-up">
+          <div class="col-6 order-md-2">
             <h2 class="options-heading fw-normal lh-1">
-              CultureQuest -
+              Culture Experience -
               <span class="text-body-secondary">Food, Art & History</span>
             </h2>
             <p class="lead">
-              Another options? Of course. More placeholder content here to
-              give you an idea of how this layout would work with some actual
-              real-world content in place.
+              Immerse yourself in the richness of local cultures. Taste authentic cuisine, explore historic sites, and enjoy art, music, and traditions that reveal the heart and soul of each destination.
             </p>
           </div>
-          <div class="col-md-5 order-md-1">
-      
-              <img src="./img/culture.jpeg" alt="CultureQuest Image" class="img-fluid rounded options-image">
+          <div class="col-6 order-md-1 d-flex align-items-center justify-content-start">
+              <img src="./img/culture.jpeg" alt="Culture Experience Image" class="img-fluid rounded options-image fade-in-up">
           </div>
         </div>
 
         <hr class="options-divider" />
-        <div class="row options align-items-center">
-          <div class="col-md-7">
+
+        <div class="row options align-items-center fade-in-up">
+          <div class="col-6">
             <h2 class="options-heading fw-normal lh-1">
-              WildTrails -
+              Wild Experience -
               <span class="text-body-secondary">Extreme Adventures</span>
             </h2>
             <p class="lead">
-              And yes, this is the last block of representative placeholder
-              content. Again, not really intended to be actually read, simply
-              here to give you a better view of what this would look like with
-              some actual content. Your content.
+              Push your limits with thrilling outdoor activities. Conquer mountains, dive into rapids, or soar through the skies—this experience is designed for adrenaline seekers and adventure lovers.
             </p>
           </div>
-          <div class="col-md-5 options-image-container">
-          <img src="./img/extreme.jpeg" alt="WildTrails Image" class="img-fluid rounded options-image">
+        <div class="col-6 d-flex align-items-center justify-content-end">
+          <img src="./img/extreme.jpeg" alt="Wild Experience Image" class="img-fluid rounded options-image fade-in-up">
         </div>
 
         <hr class="options-divider" />
-        <div class="row options align-items-center">
-          <div class="col-md-7 order-md-2">
+
+        <div class="row options align-items-center fade-in-up">
+          <div class="col-6 order-md-2">
             <h2 class="options-heading fw-normal lh-1">
-              MystiQuest -
+              Mystical Experience -
               <span class="text-body-secondary">Spiritual & Hidden Journeys</span>
             </h2>
             <p class="lead">
-              Another options? Of course. More placeholder content here to
-              give you an idea of how this layout would work with some actual
-              real-world content in place.
+              Discover the unseen and explore hidden paths to spiritual growth. Engage in meditation, sacred rituals, and journeys that awaken your mind, body, and soul.
             </p>
           </div>
-          <div class="col-md-5 order-md-1">
-    
-              <img src="./img/spiritual.jpeg" alt="MystiQuest Image" class="img-fluid rounded options-image">
+          <div class="col-6 order-md-1 d-flex align-items-center justify-content-start">
+
+             <img src="./img/spiritual.jpeg" alt="Mystical Experience Image" class="img-fluid rounded options-image fade-in-up">
           </div>
         </div>
 
         <hr class="options-divider" />
 
-        <div class="row options align-items-center">
-          <div class="col-md-7">
+        <div class="row options align-items-center fade-in-up">
+          <div class="col-6">
             <h2 class="options-heading fw-normal lh-1">
-              MindfulGetaway -
+              Mindful Experience -
               <span class="text-body-secondary">Wellness & Balance</span>
             </h2>
             <p class="lead">
-              And yes, this is the last block of representative placeholder
-              content. Again, not really intended to be actually read, simply
-              here to give you a better view of what this would look like with
-              some actual content. Your content.
+              Prioritize your well-being with retreats focused on relaxation, self-care, and mindfulness. Yoga, meditation, spa therapies, and balanced lifestyles help you recharge and find harmony.
             </p>
           </div>
-          <div class="col-md-5">
-              <img src="./img/mindful.jpeg" alt="WildTrails Image" class="img-fluid rounded options-image">
+          <div class="col-6 d-flex align-items-center justify-content-end">
+              <img src="./img/mindful.jpeg" alt="Mindful Experience Image" class="img-fluid rounded options-image fade-in-up">
 
         </div>
       </section> 
