@@ -24,7 +24,7 @@
     <link href="../css/styles.css" rel="stylesheet" />
   </head>
   <body>
-    <!-- Navbar -->
+    <!-- Offcanvas Navbar -->
     <nav class="navbar navbar-expand-lg px-4">
       <div class="navbar-container container-fluid">
         <a class="navbar-brand" href="../index.html">
@@ -88,96 +88,120 @@
       </div>
     </nav>
 
+    <!-- Section to select experience type -->
     <section class="text-center my-5">
-      <h1 class="fs-1 mb-4">Find Your Perfect Experience</h1>
-      <p class="fs-4" id="results-text">
-        Select an experience type to see matching packages.
-      </p>
-    </section>
+      <!-- Title -->
+      <div class="container px-4">
+        <h1 class="fs-1 mb-4">Find Your Perfect Experience</h1>
+        <p class="fs-4" id="results-text">
+          Select an experience type to see matching packages.
+        </p>
+      </div>
 
-    <!-- cards -->
-    <section class="g-4 px-5 min-vh-100" id="cards-section">
-      <div class="row row-cols-1 row-cols-lg-5 row-cols-sm-2 g-4">
-        <div class="col options-card-container">
-          <div class="h-100 card-eco options-card" data-experience="eco">
-            <img
-              src="../img/eco.jpeg"
-              class="card-img-top card-image h-100"
-              alt="Eco Destination"
-            />
-            <div class="card-body content">
-              <h5 class="options-card-title text-center">ECO EXPERIENCE</h5>
+      <!-- Experience Cards -->
+      <div class="g-4 px-5" id="cards-section">
+        <div
+          class="row row-cols-1 row-cols-lg-5 row-cols-sm-2 g-4 cards-experience-container"
+        >
+          <!-- Eco Experience Card -->
+          <div class="col options-card-container">
+            <div class="h-100 card-eco options-card" data-experience="eco">
+              <img
+                src="../img/eco.jpeg"
+                class="card-img-top card-image h-100"
+                alt="Eco Destination"
+              />
+              <div class="card-body content">
+                <h5 class="options-card-title text-center">ECO EXPERIENCE</h5>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cultural Experience Card -->
+          <div class="col options-card-container">
+            <div
+              class="h-100 card-culture options-card"
+              data-experience="culture"
+            >
+              <img
+                src="../img/culture.jpeg"
+                class="card-img-top card-image h-100"
+                alt="Cultural Experience"
+              />
+              <div class="card-body">
+                <h5 class="options-card-title text-center">
+                  CULTURAL EXPERIENCE
+                </h5>
+              </div>
+            </div>
+          </div>
+
+          <!-- Extreme Experience Card -->
+          <div class="col options-card-container">
+            <div
+              class="h-100 card-extreme options-card"
+              data-experience="extreme"
+            >
+              <img
+                src="../img/extreme.jpeg"
+                class="card-img-top card-image h-100"
+                alt="Extreme Adventure"
+              />
+              <div class="card-body">
+                <h5 class="options-card-title text-center">WILD EXPERIENCE</h5>
+              </div>
+            </div>
+          </div>
+
+          <!-- Mindful Experience Card  -->
+          <div class="col options-card-container">
+            <div
+              class="h-100 card-mindful options-card"
+              data-experience="mindful"
+            >
+              <img
+                src="../img/mindful.jpeg"
+                class="card-img-top card-image h-100"
+                alt="Mindful Experience"
+              />
+              <div class="card-body">
+                <h5 class="options-card-title text-center">
+                  MINDFUL EXPERIENCE
+                </h5>
+              </div>
+            </div>
+          </div>
+
+          <!-- Spiritual Experience Card -->
+          <div class="col options-card-container">
+            <div
+              class="h-100 card-spiritual options-card"
+              data-experience="spiritual"
+            >
+              <img
+                src="../img/spiritual.jpeg"
+                class="card-img-top card-image h-100"
+                alt="Spiritual Experience"
+              />
+              <div class="card-body">
+                <h5 class="options-card-title text-center">
+                  SPIRITUAL EXPERIENCE
+                </h5>
+              </div>
             </div>
           </div>
         </div>
+      </div>
 
-        <div class="col options-card-container">
-          <div
-            class="h-100 card-culture options-card"
-            data-experience="culture"
-          >
-            <img
-              src="../img/culture.jpeg"
-              class="card-img-top card-image h-100"
-              alt="Cultural Experience"
-            />
-            <div class="card-body">
-              <h5 class="options-card-title text-center">
-                CULTURAL EXPERIENCE
-              </h5>
-            </div>
-          </div>
-        </div>
-
-        <div class="col options-card-container">
-          <div
-            class="h-100 card-extreme options-card"
-            data-experience="extreme"
-          >
-            <img
-              src="../img/extreme.jpeg"
-              class="card-img-top card-image h-100"
-              alt="Extreme Adventure"
-            />
-            <div class="card-body">
-              <h5 class="options-card-title text-center">WILD EXPERIENCE</h5>
-            </div>
-          </div>
-        </div>
-
-        <div class="col options-card-container">
-          <div
-            class="h-100 card-mindful options-card"
-            data-experience="mindful"
-          >
-            <img
-              src="../img/mindful.jpeg"
-              class="card-img-top card-image h-100"
-              alt="Mindful Experience"
-            />
-            <div class="card-body">
-              <h5 class="options-card-title text-center">MINDFUL EXPERIENCE</h5>
-            </div>
-          </div>
-        </div>
-
-        <div class="col options-card-container">
-          <div
-            class="h-100 card-spiritual options-card"
-            data-experience="spiritual"
-          >
-            <img
-              src="../img/spiritual.jpeg"
-              class="card-img-top card-image h-100"
-              alt="Spiritual Experience"
-            />
-            <div class="card-body">
-              <h5 class="options-card-title text-center">
-                SPIRITUAL EXPERIENCE
-              </h5>
-            </div>
-          </div>
-        </div>
+      <div class="mb-5">
+        <h2 class="fs-2 mb-4 text-center mt-5">Or explore all packages</h2>
+        <button
+          type="button"
+          class="btn-custom px-4 py-2 rounded-pill shadow-sm"
+          id="show-all-packages"
+        >
+          See all the packages
+        </button>
       </div>
     </section>
 
@@ -187,30 +211,25 @@
       class="my-5 text-center min-vh-100 hidden py-5"
     >
       <h2 id="results-title" class="fs-2 mb-4"></h2>
-      <div id="result-cards" class="row row-cols-1 row-cols-lg-3 g-4 m-4">
-        <!-- Destination cards will be dynamically inserted here -->
-      </div>
-      <!-- Functionality handled with JavaScript -->
-      <button
-        type="button"
-        class="btn-custom px-4 py-2 mt-4 rounded-pill shadow-sm"
-        id="show-all-packages"
+      <div
+        id="result-cards"
+        class="row row-cols-1 row-cols-lg-3 row-cols-md-2 g-4 m-4"
       >
-        See all the packages
-      </button>
+        <!-- Destination cards will be dynamically inserted here with JavaScript-->
+      </div>
     </section>
 
-    <!-- Vertically centered scrollable modal -->
+    <!-- Modal to show destination details -->
     <div class="modal fade" id="detailsModal" tabindex="-1" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-        <!-- Modal will be dynamically inserted here -->
+        <!-- Modal will be dynamically inserted here with JavaScript -->
       </div>
     </div>
 
     <!-- Footer -->
     <div class="container">
       <footer
-        class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
+        class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top footer-custom"
       >
         <p class="col-md-4 mb-0 text-body-secondary">
           &copy; 2025 Travel Explorer

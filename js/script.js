@@ -1,3 +1,5 @@
+// All package data is stored in packages.js
+
 let selectedCard = null;
 
 // DOM selection
@@ -31,8 +33,11 @@ function renderPackages(packages) {
   resultCardsContainer.innerHTML = "";
 
   packages.forEach((dest) => {
+    // For each destination, create a card element
     const card = document.createElement("div");
+    // Add a Bootstrap column class
     card.classList.add("col");
+    // Set the inner HTML of the card with destination data (all the information comes from packages.js)
     card.innerHTML = `
     <div class="col">
       <div class="card result-card h-100" data-bs-toggle="modal" data-bs-target="#detailsModal">
@@ -56,79 +61,77 @@ function renderPackages(packages) {
       </div>
     </div>
     `;
+    // Append the card to the results container
     resultCardsContainer.appendChild(card);
-    console.log(card);
-  });
-}
-
-// Event listener for "See all the packages" button
-if (showAllPackagesButton) {
-  showAllPackagesButton.addEventListener("click", () => {
-    // Show all packages
-    renderPackages(allPackages);
-    // Hide the button after clicking
-    showAllPackagesButton.classList.add("hidden");
-    // Update the results title
-    resultsTitle.textContent = "All Packages";
   });
 }
 
 // Function to handle card selection and call the function to display results
-if (cards.length > 0) {
-  cards.forEach((card) => {
-    card.addEventListener("click", (event) => {
-      // Using dataset to get the experience type
-      selectedCard = event.currentTarget.dataset.experience;
+// Event listeners for experience option cards
+cards.forEach((card) => {
+  card.addEventListener("click", (event) => {
+    // Using dataset to get the experience type
+    selectedCard = event.currentTarget.dataset.experience;
+    // Update results title and render packages based on selected experience using a switch statement, using the function (renderPackages) with the packages from packages.js
+    switch (selectedCard) {
+      case "eco":
+        resultsTitle.textContent = "Eco Experience – Sustainable Adventures";
+        renderPackages(ecoPackages);
+        break;
+      case "culture":
+        resultsTitle.textContent = "Culture Experience – Food, Art & History";
+        renderPackages(culturePackages);
+        break;
+      case "extreme":
+        resultsTitle.textContent = "Wild Experience – Extreme Adventures";
+        renderPackages(extremePackages);
+        break;
+      case "spiritual":
+        resultsTitle.textContent =
+          "Spiritual Experience – Spiritual & Hidden Journeys";
+        renderPackages(spiritualPackages);
+        break;
+      case "mindful":
+        resultsTitle.textContent = "Mindful Experience – Wellness & Balance";
+        renderPackages(mindfulPackages);
+        break;
+      default:
+        resultsTitle.textContent = "Available Packages";
+    }
 
-      switch (selectedCard) {
-        case "eco":
-          resultsTitle.textContent = "EcoVoyage – Sustainable Adventures";
-          renderPackages(ecoPackages);
-          break;
-        case "culture":
-          resultsTitle.textContent = "CultureQuest – Food, Art & History";
-          renderPackages(culturePackages);
-          break;
-        case "extreme":
-          resultsTitle.textContent = "WildTrails – Extreme Adventures";
-          renderPackages(extremePackages);
-          break;
-        case "spiritual":
-          resultsTitle.textContent = "MystiQuest – Spiritual & Hidden Journeys";
-          renderPackages(spiritualPackages);
-          break;
-        case "mindful":
-          resultsTitle.textContent = "MindfulGetaway – Wellness & Balance";
-          renderPackages(mindfulPackages);
-          break;
-        default:
-          resultsTitle.textContent = "Available Packages";
-      }
+    //  Remove hidden class to show results section
+    resultsSection.classList.remove("hidden");
 
-      // Show results section
-      resultsSection.classList.remove("hidden");
-
-      // Scroll to results section
-      resultsSection.scrollIntoView({ behavior: "smooth" });
-    });
+    // Scroll to results section
+    resultsSection.scrollIntoView({ behavior: "smooth" });
   });
-}
+});
 
-// Event delegation to handle clicks on dynamically created result cards
+// Event delegation to handle clicks on dynamically created result cards and show modal with details
+
 if (resultCardsContainer) {
+  // Add click event listener to the container
   resultCardsContainer.addEventListener("click", (event) => {
+    // Find the clicked card element
     const card = event.target.closest(".card");
+    // Proceed only if a card was clicked
     if (card) {
+      // Get the title of the clicked card
       const title = card.querySelector(".card-title").textContent;
 
       // Find the destination data based on the title
       let destinationData = null;
 
+      // Search in all packages arrays
       destinationData = allPackages.find((dest) => dest.title === title);
 
+      // If destination data is found, populate the modal
       if (destinationData) {
+        // Create modal content
         const modal = document.createElement("div");
+        // Add modal-content class
         modal.classList.add("modal-content");
+        // Set the inner HTML of the modal with destination data
         modal.innerHTML = `
          <div class="modal-content">
         <div class="modal-header">
@@ -174,6 +177,21 @@ if (resultCardsContainer) {
   });
 }
 
+// Event listener for "See all the packages" button
+// Add if verification to ensure the button exists, to avoid errors on pages where it is not present
+if (showAllPackagesButton) {
+  showAllPackagesButton.addEventListener("click", () => {
+    // Show all packages
+    renderPackages(allPackages);
+    resultsTitle.textContent = "All Packages";
+
+    //  Remove hidden class to show results section
+    resultsSection.classList.remove("hidden");
+    // Scroll to results section
+    resultsSection.scrollIntoView({ behavior: "smooth" });
+  });
+}
+
 // FORM VALIDATION SCRIPT FROM BOOTSTRAP DOCUMENTATION
 (() => {
   "use strict";
@@ -197,7 +215,7 @@ if (resultCardsContainer) {
         if (form.classList.contains("was-validated") && form.checkValidity()) {
           // Form is valid, you can proceed with submission or further processing
 
-          event.preventDefault(); // Remove this line to allow actual submission
+          event.preventDefault();
           form.classList.add("hidden");
           successMessage.classList.remove("hidden");
         }
