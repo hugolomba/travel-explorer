@@ -8,12 +8,19 @@
       content="Explore curated travel experiences — from eco adventures to mindful escapes — with Travel Explorer."
     />
     <title>Destinations</title>
+    <!-- Bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
+    <!-- Bootstrap Icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS -->
     <link href="../css/styles.css" rel="stylesheet" />
   </head>
   <body>
@@ -30,30 +37,53 @@
         <button
           class="navbar-toggler"
           type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
           aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item fs-4">
-              <a class="nav-link" aria-current="page" href="../index.html"
-                >Home</a
-              >
-            </li>
-            <li class="nav-item fs-4">
-              <a class="nav-link active-nav-link" href="./destinations.html"
-                >Destinations</a
-              >
-            </li>
-            <li class="nav-item fs-4">
-              <a class="nav-link" href="./contact.html">Contact Us</a>
-            </li>
-          </ul>
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <a class="navbar-brand" href="../index.html">
+              <img
+                src="../img/logo4-new.png"
+                alt="Logo"
+                class="d-inline-block align-text-middle logo-custom"
+              />
+            </a>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item fs-4">
+                <a class="nav-link" aria-current="page" href="../index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link fs-4 active-nav-link"
+                  href="./destinations.html"
+                  >Destinations</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link fs-4" href="./contact.html">Contact Us</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </nav>
@@ -68,8 +98,8 @@
     <!-- cards -->
     <section class="g-4 px-5 min-vh-100" id="cards-section">
       <div class="row row-cols-1 row-cols-lg-5 row-cols-sm-2 g-4">
-        <div class="col position-relative">
-          <div class="h-100 card-eco options-card">
+        <div class="col options-card-container">
+          <div class="h-100 card-eco options-card" data-experience="eco">
             <img
               src="../img/eco.jpeg"
               class="card-img-top card-image h-100"
@@ -77,16 +107,11 @@
             />
             <div class="card-body content">
               <h5 class="options-card-title text-center">ECO EXPERIENCE</h5>
-              <!-- <p class="card-text">
-                This is a longer card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
-              </p> -->
             </div>
           </div>
         </div>
 
-        <div class="col">
+        <div class="col options-card-container">
           <div
             class="h-100 card-culture options-card"
             data-experience="culture"
@@ -100,16 +125,11 @@
               <h5 class="options-card-title text-center">
                 CULTURAL EXPERIENCE
               </h5>
-              <!-- <p class="card-text">
-                This is a longer card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
-              </p> -->
             </div>
           </div>
         </div>
 
-        <div class="col">
+        <div class="col options-card-container">
           <div
             class="h-100 card-extreme options-card"
             data-experience="extreme"
@@ -121,16 +141,11 @@
             />
             <div class="card-body">
               <h5 class="options-card-title text-center">WILD EXPERIENCE</h5>
-              <!-- <p class="card-text">
-                This is a longer card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
-              </p> -->
             </div>
           </div>
         </div>
 
-        <div class="col">
+        <div class="col options-card-container">
           <div
             class="h-100 card-mindful options-card"
             data-experience="mindful"
@@ -142,15 +157,11 @@
             />
             <div class="card-body">
               <h5 class="options-card-title text-center">MINDFUL EXPERIENCE</h5>
-              <!-- <p class="card-text">
-                This is a longer card with supporting text below as a natural
-                lead-in to additional content.
-              </p> -->
             </div>
           </div>
         </div>
 
-        <div class="col">
+        <div class="col options-card-container">
           <div
             class="h-100 card-spiritual options-card"
             data-experience="spiritual"
@@ -164,11 +175,6 @@
               <h5 class="options-card-title text-center">
                 SPIRITUAL EXPERIENCE
               </h5>
-              <!-- <p class="card-text">
-                This is a longer card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
-              </p> -->
             </div>
           </div>
         </div>

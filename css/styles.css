@@ -139,6 +139,70 @@ body {
 
 /* destinations.html */
 
+/* ====== Cards Section ====== */
+.options-card {
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  cursor: pointer;
+  position: relative;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.options-card img {
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+/* Effects hover the mouse */
+.options-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.options-card:hover img {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+
+.options-card-title {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+  /* opacity: 0; */
+  transition: all 0.5s ease;
+  letter-spacing: 1px;
+  /* bottom: 50%; */
+  /* transform: translate(-50%, -80%); */
+  opacity: 1;
+}
+
+.options-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.options-card:hover::after {
+  opacity: 1;
+}
+
+.options-card:hover .options-card-title {
+  bottom: 50%;
+  transform: translate(-50%, 50%);
+  opacity: 1;
+}
+/* ====== Results Cards Section ====== */
+
 .result-card-image {
   width: 100%;
   height: 300px;
@@ -171,6 +235,13 @@ body {
   transform: none;
   box-shadow: none;
   cursor: default;
+}
+
+/* ===== FORM STYLES ===== */
+
+.custom-icon {
+  font-size: 4rem;
+  color: #28a745;
 }
 
 /* --- Animations --- */
@@ -221,81 +292,58 @@ body {
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 
-@media (min-width: 40em) {
-  /* Bump up size of carousel content */
-  .carousel-caption p {
-    margin-bottom: 1.25rem;
-    font-size: 1.25rem;
-    line-height: 1.4;
-  }
-
-  .options-heading {
-    font-size: 50px;
-  }
-}
-
-@media (max-width: 768px) {
+@media (max-width: 576px) {
   .how-it-works-title {
     margin: 2rem 0 2.5rem;
   }
-}
 
-/* ====== Cards Section ====== */
-.options-card {
-  border: none;
-  border-radius: 15px;
-  overflow: hidden;
-  transition: all 0.4s ease;
-  cursor: pointer;
-  position: relative;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-}
+  .navbar-container {
+    padding: 0 !important;
+    /* background-color: violet; */
+  }
 
-.options-card img {
-  object-fit: cover;
-  transition: transform 0.5s ease;
-}
+  .hero-section {
+    height: auto;
+    margin-bottom: 5rem;
+  }
 
-/* Effects hover the mouse */
-.options-card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
-}
+  .hero-text-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 
-.options-card:hover img {
-  transform: scale(1.1);
-  opacity: 0.8;
-}
+  .hero-caroussel-section {
+    height: 45vh !important;
+  }
 
-.options-card-title {
-  position: absolute;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  color: white;
-  font-weight: 700;
-  font-size: 1.5rem;
-  text-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
-  opacity: 0;
-  transition: all 0.5s ease;
-  letter-spacing: 1px;
-}
+  .hero-img {
+    clip-path: none;
+    border-radius: 2rem;
+  }
 
-.options-card::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
-  opacity: 0;
-  transition: opacity 0.5s ease;
-}
+  #options {
+    padding: 2rem !important;
+  }
 
-.options-card:hover::after {
-  opacity: 1;
-}
+  .options-image {
+    clip-path: none;
+  }
 
-.options-card:hover .options-card-title {
-  bottom: 50%;
-  transform: translate(-50%, 50%);
-  opacity: 1;
+  .options-card-container {
+    height: 6.5rem !important;
+  }
+
+  /* .options-card-title {
+    bottom: 50%;
+    transform: translate(-50%, 50%);
+    opacity: 1;
+  } */
+
+  form {
+    display: flex;
+    flex-direction: column;
+    /* gap: 1rem; */
+  }
 }

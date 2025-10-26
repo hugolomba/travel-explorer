@@ -20,6 +20,11 @@ const modalPrice = document.getElementById("modalPrice");
 const modalDifficulty = document.getElementById("modalDifficulty");
 const modalBestTime = document.getElementById("modalBestTime");
 
+// Form elements
+const contactForm = document.querySelector(".contact-form");
+const successMessage = document.querySelector(".success-message");
+const newMessageButton = document.getElementById("new-message-btn");
+
 // Function to create a result card with the given destination data
 function renderPackages(packages) {
   // Clear previous results
@@ -169,7 +174,7 @@ if (resultCardsContainer) {
   });
 }
 
-// FORM VALIDATION SCRIPT
+// FORM VALIDATION SCRIPT FROM BOOTSTRAP DOCUMENTATION
 (() => {
   "use strict";
 
@@ -187,8 +192,48 @@ if (resultCardsContainer) {
         }
 
         form.classList.add("was-validated");
+
+        // If the form is valid, show success message
+        if (form.classList.contains("was-validated") && form.checkValidity()) {
+          // Form is valid, you can proceed with submission or further processing
+
+          event.preventDefault(); // Remove this line to allow actual submission
+          form.classList.add("hidden");
+          successMessage.classList.remove("hidden");
+        }
       },
       false
     );
   });
 })();
+
+// Real-time validation feedback
+document
+  .querySelectorAll(
+    ".needs-validation input, .needs-validation textarea, .needs-validation select"
+  )
+  .forEach((input) => {
+    input.addEventListener("blur", () => {
+      if (!input.checkValidity()) {
+        input.classList.add("is-invalid");
+      } else {
+        input.classList.remove("is-invalid");
+        input.classList.add("is-valid");
+      }
+    });
+  });
+
+// Event listener for "Send another message" button
+if (newMessageButton) {
+  newMessageButton.addEventListener("click", () => {
+    // Reset form
+    contactForm.reset();
+    contactForm.classList.remove("hidden", "was-validated");
+    successMessage.classList.add("hidden");
+
+    // Remove validation classes
+    contactForm.querySelectorAll(".is-valid, .is-invalid").forEach((input) => {
+      input.classList.remove("is-valid", "is-invalid");
+    });
+  });
+}
