@@ -80,7 +80,7 @@ const ecoPackages = [
     price: "€2,100",
     difficulty: "Moderate",
     bestTime: "May – September",
-    image: "../img/eco-packages/norway.jpg",
+    image: "../img/eco-packages/norway.avif",
   },
   {
     id: "new-zealand-green-adventure",
@@ -201,7 +201,7 @@ const culturePackages = [
     price: "€1,800",
     difficulty: "Easy",
     bestTime: "April – October",
-    image: "../img/culture-packages/france.jpg",
+    image: "../img/culture-packages/france.webp",
   },
   {
     id: "greece-myth-taste",
@@ -241,7 +241,7 @@ const culturePackages = [
     price: "€1,600",
     difficulty: "Easy – Moderate",
     bestTime: "October – March",
-    image: "../img/culture-packages/mexico.jpg",
+    image: "../img/culture-packages/mexico.jpeg",
   },
 ];
 
@@ -325,7 +325,7 @@ const extremePackages = [
     price: "€2,800",
     difficulty: "Hard",
     bestTime: "March – November",
-    image: "../img/extreme-packages/chile.jpg",
+    image: "../img/extreme-packages/chile.webp",
   },
   {
     id: "canada-yukon-expedition",
@@ -347,28 +347,6 @@ const extremePackages = [
     difficulty: "Very Hard",
     bestTime: "June – September",
     image: "../img/extreme-packages/canada.jpg",
-  },
-  {
-    id: "tanzania-kilimanjaro-ascent",
-    title: "Tanzania – Kilimanjaro Ascent",
-    subtitle: "Summit Challenge",
-    description:
-      "Climb Africa’s highest peak with expert guides and breathtaking views.",
-    itinerary: [
-      "Day 1 – Moshi Arrival",
-      "Day 2 – Trekking Preparation",
-      "Day 3 – Climb Begins",
-      "Day 4 – Shira Plateau",
-      "Day 5 – Barranco Wall",
-      "Day 6 – Summit Night",
-      "Day 7 – Descent",
-      "Day 8 – Departure",
-    ],
-    duration: "8 days",
-    price: "€3,800",
-    difficulty: "Very Hard",
-    bestTime: "June – October",
-    image: "../img/extreme-packages/tanzania.jpg",
   },
 ];
 
@@ -457,46 +435,6 @@ const spiritualPackages = [
     bestTime: "April – October",
     image: "../img/spiritual-packages/indonesia.jpg",
   },
-  {
-    id: "greece-oracle-path",
-    title: "Greece – Oracle Path",
-    subtitle: "Delphi Awakening",
-    description:
-      "Ancient temples, coastal meditation, and energy workshops in sacred sites.",
-    itinerary: [
-      "Day 1 – Athens Arrival",
-      "Day 2 – Delphi Temple Visit",
-      "Day 3 – Meditation by the Sea",
-      "Day 4 – Energy Workshop",
-      "Day 5 – Sacred Sites Tour",
-      "Day 6 – Departure",
-    ],
-    duration: "6 days",
-    price: "€2,100",
-    difficulty: "Easy – Moderate",
-    bestTime: "May – September",
-    image: "../img/spiritual-packages/greece.jpg",
-  },
-  {
-    id: "turkey-cappadocia-spirit",
-    title: "Turkey – Cappadocia Spirit",
-    subtitle: "Valleys of Silence",
-    description:
-      "Hot-air meditation, cave rituals, and mindfulness in surreal landscapes.",
-    itinerary: [
-      "Day 1 – Göreme Arrival",
-      "Day 2 – Hot-Air Meditation",
-      "Day 3 – Valley Walk & Cave Ritual",
-      "Day 4 – Mindfulness Workshop",
-      "Day 5 – Local Culture Exploration",
-      "Day 6 – Departure",
-    ],
-    duration: "6 days",
-    price: "€1,900",
-    difficulty: "Moderate",
-    bestTime: "April – October",
-    image: "../img/spiritual-packages/turkey.jpg",
-  },
 ];
 
 const mindfulPackages = [
@@ -562,68 +500,6 @@ const mindfulPackages = [
     difficulty: "Easy",
     bestTime: "April – October",
     image: "../img/mindful-packages/portugal.avif",
-  },
-  {
-    id: "finland-arctic-calm",
-    title: "Finland – Arctic Calm",
-    subtitle: "Northern Lights Retreat",
-    description:
-      "Meditation under auroras and forest sauna experiences in Lapland.",
-    itinerary: [
-      "Day 1 – Rovaniemi Arrival",
-      "Day 2 – Aurora Meditation",
-      "Day 3 – Forest Sauna",
-      "Day 4 – Arctic Nature Walk",
-      "Day 5 – Mindfulness Workshop",
-      "Day 6 – Departure",
-    ],
-    duration: "6 days",
-    price: "€2,300",
-    difficulty: "Easy",
-    bestTime: "November – March",
-    image: "../img/mindful-packages/finland.jpg",
-  },
-  {
-    id: "spain-mallorca-balance",
-    title: "Spain – Mallorca Balance",
-    subtitle: "Island Wellness",
-    description:
-      "Yoga by the sea and slow living workshops surrounded by olive groves.",
-    itinerary: [
-      "Day 1 – Palma Arrival",
-      "Day 2 – Yoga by the Sea",
-      "Day 3 – Wellness Workshop",
-      "Day 4 – Olive Grove Retreat",
-      "Day 5 – Island Exploration",
-      "Day 6 – Leisure Day",
-      "Day 7 – Departure",
-    ],
-    duration: "7 days",
-    price: "€1,600",
-    difficulty: "Easy",
-    bestTime: "April – October",
-    image: "../img/mindful-packages/spain.jpg",
-  },
-  {
-    id: "costa-rica-jungle-serenity",
-    title: "Costa Rica – Jungle Serenity",
-    subtitle: "Mindful Rainforest",
-    description:
-      "Reconnect with nature through eco-lodges, breathwork, and forest therapy.",
-    itinerary: [
-      "Day 1 – San José Arrival",
-      "Day 2 – Rainforest Eco-Lodge",
-      "Day 3 – Forest Therapy",
-      "Day 4 – Breathwork Session",
-      "Day 5 – Nature Walks",
-      "Day 6 – Mindfulness Workshop",
-      "Day 7 – Departure",
-    ],
-    duration: "7 days",
-    price: "€1,900",
-    difficulty: "Easy – Moderate",
-    bestTime: "December – April",
-    image: "../img/mindful-packages/costa-rica.jpg",
   },
 ];
 
