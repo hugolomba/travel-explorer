@@ -322,6 +322,7 @@ body {
 
   .footer-custom {
     justify-content: center !important;
+    flex-direction: column;
   }
 
   form {

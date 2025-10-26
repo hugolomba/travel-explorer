@@ -414,27 +414,6 @@ const spiritualPackages = [
     bestTime: "October – April",
     image: "../img/spiritual-packages/egypt.jpg",
   },
-  {
-    id: "indonesia-sacred-bali",
-    title: "Indonesia – Sacred Bali",
-    subtitle: "Temple & Spirit Journey",
-    description:
-      "Meditation by waterfalls and temple ceremonies led by Balinese priests.",
-    itinerary: [
-      "Day 1 – Ubud Arrival",
-      "Day 2 – Waterfall Meditation",
-      "Day 3 – Temple Ceremony",
-      "Day 4 – Spiritual Workshop",
-      "Day 5 – Wellness Day",
-      "Day 6 – Departure",
-      "Day 7 – (Optional) Beach Reflection",
-    ],
-    duration: "7 days",
-    price: "€1,800",
-    difficulty: "Easy",
-    bestTime: "April – October",
-    image: "../img/spiritual-packages/indonesia.jpg",
-  },
 ];
 
 const mindfulPackages = [
